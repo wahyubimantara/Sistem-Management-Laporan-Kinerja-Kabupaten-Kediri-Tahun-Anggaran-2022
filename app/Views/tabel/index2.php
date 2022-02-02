@@ -62,8 +62,11 @@
                         <tr>
                             <td class="kecilkan"><strong><?php echo  $p->Kd_Gab_Prog; ?></strong></td>
                             <td colspan="5"><strong><br><?php echo $nomor_program++ . '. '. $p->Nm_Program; ?></br><br></strong></td>
-                            <td colspan="2"></td>
-                            <td colspan="4"></td>
+                            <td class ="kecilkan" style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
+                            <td class ="kecilkan"style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
+                            <td>100</td>
+                            <td colspan="2"><?php echo number_format((100.0*$p->SUM_Realisasi_Program/$p->SUM_Anggaran_Program),2,",",".") ?></td>
+                            <td>%</td>
                         </tr>
 
                         <?php $nomor_kegiatan=1 ?>
@@ -75,11 +78,11 @@
                                 <td class="kiri" colspan="4"><?php echo $nomor_kegiatan++ . '&emsp;'.$k->Nm_Kegiatan; ?></td>
                                 <td class ="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
                                 <td class ="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
-                                <!-- <td>&nbsp;</td> -->
-                                <td colspan="4">&nbsp;</td>
-                                <!-- <td>&nbsp;</td> -->
+                                <td>100</td>
+                                <td colspan="2"><?php echo number_format((100.0*$k->SUM_Realisasi/$k->SUM_Anggaran),2,",",".") ?></td>
+                                <td>%</td>
                             </tr>
-
+                  
                             <?php $nomor_sub_kegiatan=1 ?>
                             <?php $sub_kegiatans = $model->get_sub_kegiatan($k)->getResult() ?>
                             <?php foreach ($sub_kegiatans as $sub_k) : ?>
@@ -89,8 +92,8 @@
                                     <td>&nbsp;</td>
                                     <td class="kiri_kanan">&nbsp;</td>
                                     <td colspan="3"><?php echo $nomor_sub_kegiatan++ . '&emsp;'. $sub_k->Nm_Sub_Kegiatan; ?></td>
-                                    <td class ="kecilkan" style="text-align: right;"><?php echo number_format("$sub_k->Anggaran", 2, ",", "."); ?></td>
-                                    <td class ="kecilkan" style="text-align: right;"><?php echo number_format("$sub_k->Realisasi", 2, ",", "."); ?></td>
+                                    <td class ="kecilkan" style="text-align: right;">&nbsp</td>
+                                    <td class ="kecilkan" style="text-align: right;">&nbsp</td>
                                     <!-- <td>&nbsp;</td> -->
                                     <td colspan="4">&nbsp;</td>
                                     <!-- <td>&nbsp;</td> -->
@@ -101,11 +104,13 @@
                                     <td class="kiri_kanan">&nbsp;</td>
                                     <td class="kiri" style="white-space: nowrap;" >Indikator 1 :</td>
                                     <td class="kiri" colspan ="2" style="min-width: 15rem;"> Dana </td>
-                                    <td class ="kecilkan" style="text-align: right;"><?php echo number_format($sub_k->Anggaran, 2, ",", "."); ?></td>
-                                    <td class ="kecilkan" style="text-align: right;"><?php echo number_format($sub_k->Realisasi, 2, ",", "."); ?></td>
-                                    <!-- <td>&nbsp;</td> -->
-                                    <td colspan="4"> &nbsp;</td>
-                                    <!-- <td>&nbsp;</td> -->
+                                    <?php $anggaran_value=number_format($sub_k->Anggaran, 2, ",", ".");?>
+                                    <?php $realisasi_value=number_format($sub_k->Realisasi, 2, ",", ".");?>
+                                    <td class ="kecilkan" style="text-align: right;"><?php echo $anggaran_value; ?></td>
+                                    <td class ="kecilkan" style="text-align: right;"><?php echo $realisasi_value; ?></td>
+                                    <td>100</td>
+                                    <td colspan="2"><?php echo number_format((100.0*$sub_k->Realisasi/$sub_k->Anggaran),2,",",".") ?> </td>
+                                    <td>%</td>
                                 </tr>
 
                              
@@ -124,7 +129,7 @@
                                     <td><?php echo number_format ($i->target_angka);?></td>
                                     <td><?= $i->realisasi;?> </td>
                                     <td class="kiri" style="width: 2%;">
-                                        <a href="#" data-toggle="modal" data-target="#ModalEdit" 
+                                        <a href="#" data-toggle="modal" data-target="#ModalEdit" title="edit realisasi"
                                             onclick ="edit(<?php echo $i->id;?>)">
                                             <i class="fas fa-edit"></i>
                                         </a>

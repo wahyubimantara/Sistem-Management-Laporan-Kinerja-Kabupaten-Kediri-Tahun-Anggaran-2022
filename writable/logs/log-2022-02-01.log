@@ -1,0 +1,137 @@
+ERROR - 2022-02-01 21:16:04 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-02-01 21:16:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '7')
+#4 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Authentication\AuthenticationBase.php(137): CodeIgniter\BaseModel->find('7')
+#5 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(70): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#6 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Filters\LoginFilter.php(45): Myth\Auth\Authentication\LocalAuthenticator->check()
+#7 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-02-01 22:48:49 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'Anggaran'.
+CRITICAL - 2022-02-01 22:48:49 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-02-01 22:49:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'Anggaran'.
+CRITICAL - 2022-02-01 22:49:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'Anggaran'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 22:50:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Kd_Gab_Prog' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 22:50:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Kd_Gab_Prog' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 22:57:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Kd_Gab_Prog' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 22:57:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Kd_Gab_Prog' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 23:01:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 23:01:51 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(45): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 23:01:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 23:01:52 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(45): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 23:01:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 23:01:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(45): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-02-01 23:01:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+CRITICAL - 2022-02-01 23:01:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'kinerja_2021.dbo.coba.Nm_Program' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT DISTINCT...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(45): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-02-01 23:07:40 --> array_sum() expects parameter 1 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_sum() exp...', 'C:\\xampp\\htdocs...', 84, Array)
+#1 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(84): array_sum('8200000.0000')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

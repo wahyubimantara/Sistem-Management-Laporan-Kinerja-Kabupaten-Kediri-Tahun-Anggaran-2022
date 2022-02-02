@@ -35,12 +35,12 @@ class ModelTabel extends Model
 
     public function get_where($Kd_Urusan,$Kd_Bidang, $kd_unit, $kd_sub){
 
-        $query= $this->table("coba")->select('Kd_Gab_Prog, Nm_Program, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub')
+        $query= $this->table("coba")->select('Kd_Gab_Prog, Nm_Program, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub,SUM(Anggaran)as SUM_Anggaran_Program, SUM(Realisasi)as SUM_Realisasi_Program' )
                                     ->where('Kd_Urusan',$Kd_Urusan)
                                     ->where('Kd_Bidang',$Kd_Bidang)
                                     ->where('kd_unit',$kd_unit)
                                     ->where('kd_sub',$kd_sub)
-                                    ->distinct(true)
+                                    ->groupBy('Kd_Gab_Prog, Nm_Program, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub')
                                     ->get();
         return $query;
     }
