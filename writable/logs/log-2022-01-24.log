@@ -1,0 +1,383 @@
+CRITICAL - 2022-01-24 00:51:20 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 00:52:15 --> Trying to get property 'userid' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 00:52:43 --> Undefined index: userid
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 00:53:51 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 00:55:49 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('user', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 00:56:52 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:09 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:11 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:15 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:17 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin/7', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:00:22 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:00:23 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:24 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin/7', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:00:25 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('admin', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:00:26 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:26 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:28 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 01:00:41 --> Undefined variable: user
+#0 C:\xampp\htdocs\bpkad\app\Views\user\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('user/index', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\User.php(20): view('user/index', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-24 01:17:36 --> Duplicate entry '' for key 'email'
+CRITICAL - 2022-01-24 01:17:36 --> Duplicate entry '' for key 'email'
+#0 C:\xampp\htdocs\bpkad\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\htdocs\bpkad\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\bpkad\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\bpkad\system\Model.php(646): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\User.php(52): CodeIgniter\Model->update(NULL, Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\user->updateUser()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-01-24 01:21:10 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('user', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:22:56 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('user/updateUser', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-24 01:24:45 --> You do not have sufficient permissions to access that page.
+#0 C:\xampp\htdocs\bpkad\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('user/updateUser', 'before')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-24 21:48:59 --> No database selected
+CRITICAL - 2022-01-24 21:48:59 --> Call to a member function getFirstRow() on bool
+#0 C:\xampp\htdocs\bpkad\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#1 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#2 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#3 C:\xampp\htdocs\bpkad\vendor\myth\auth\src\Controllers\AuthController.php(88): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): Myth\Auth\Controllers\AuthController->attemptLogin()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-24 22:39:17 --> Undefined property: App\Controllers\Tabel::$builder
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-24 22:39:55 --> Undefined property: App\Controllers\Tabel::$db2
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2022-01-24 22:44:46 --> Table 'project1.biodata' doesn't exist
+CRITICAL - 2022-01-24 22:44:46 --> Table 'project1.biodata' doesn't exist
+#0 C:\xampp\htdocs\bpkad\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-24 22:45:16 --> Table 'project1.ref_unit' doesn't exist
+CRITICAL - 2022-01-24 22:45:16 --> Table 'project1.ref_unit' doesn't exist
+#0 C:\xampp\htdocs\bpkad\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-24 22:45:19 --> Table 'project1.ref_unit' doesn't exist
+CRITICAL - 2022-01-24 22:45:19 --> Table 'project1.ref_unit' doesn't exist
+#0 C:\xampp\htdocs\bpkad\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-24 22:49:55 --> Table 'project1.ref_unit' doesn't exist
+CRITICAL - 2022-01-24 22:49:55 --> Table 'project1.ref_unit' doesn't exist
+#0 C:\xampp\htdocs\bpkad\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bpkad\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 22:56:55 --> Access to undeclared static property: Config\Database::$database_kedua
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-24 23:04:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+CRITICAL - 2022-01-24 23:04:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-24 23:07:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+CRITICAL - 2022-01-24 23:07:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-24 23:07:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+CRITICAL - 2022-01-24 23:07:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-24 23:07:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+CRITICAL - 2022-01-24 23:07:30 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-01-24 23:10:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+CRITICAL - 2022-01-24 23:10:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-01-24 23:19:06 --> Undefined property: App\Controllers\Tabel::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

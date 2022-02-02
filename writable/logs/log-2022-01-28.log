@@ -1,0 +1,523 @@
+ERROR - 2022-01-28 01:49:33 --> Error connecting to the database: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+CRITICAL - 2022-01-28 01:49:33 --> Unable to connect to the database.
+Main connection [SQLSRV]: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#2 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#3 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 01:50:02 --> Error connecting to the database: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+CRITICAL - 2022-01-28 01:50:02 --> Unable to connect to the database.
+Main connection [SQLSRV]: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#2 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#3 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 01:50:45 --> Error connecting to the database: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+CRITICAL - 2022-01-28 01:50:45 --> Unable to connect to the database.
+Main connection [SQLSRV]: . 
+Login timeout expired
+A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#2 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#3 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(18): App\Models\ModelTabel->get_where('4', '1', '4', '1')
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 07:00:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:00:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(104): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(113): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+ERROR - 2022-01-28 07:03:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:03:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(104): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(113): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2022-01-28 07:09:58 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(113): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 113, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 07:16:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:16:50 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(104): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(21): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+ERROR - 2022-01-28 07:19:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:19:20 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(104): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+ERROR - 2022-01-28 07:20:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:20:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(104): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2022-01-28 07:23:57 --> Trying to get property 'Kd_Urusan' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 93, Array)
+#1 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(4, 1, 4, 1)
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-01-28 07:25:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+CRITICAL - 2022-01-28 07:25:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The objects "kinerja_2021.dbo.coba" and "kinerja_2021.dbo.coba" in the FROM clause have the same exposed names. Use correlation names to distinguish them.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kinerja...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kinerja...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kinerja...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(102): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(4, 1, 4, 1)
+#6 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#9 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#12 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2022-01-28 07:36:07 --> Trying to get property 'kd_unit' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-01-28 07:57:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 07:57:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(137): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:02:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:02:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(137): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:08:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:08:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(139): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:20:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:20:05 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(138): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:20:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:20:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(138): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:49:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:49:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:49:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'AND'.
+CRITICAL - 2022-01-28 08:49:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'AND'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:52:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'coba'.
+CRITICAL - 2022-01-28 08:52:47 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'coba'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:53:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:53:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 08:56:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 08:56:35 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 09:14:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 09:14:24 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(140): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-01-28 09:15:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+CRITICAL - 2022-01-28 09:15:31 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '4'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kinerja_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kinerja_...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(141): CodeIgniter\Database\BaseConnection->query('SELECT kinerja_...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(111): App\Models\ModelTabel->get_indikator(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-01-28 09:19:20 --> Undefined variable: i
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 121, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 18:50:41 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 152, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 18:52:26 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 19:21:18 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\index2.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 113, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/index2', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(22): view('tabel/index2', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-28 19:54:07 --> Too few arguments to function App\Controllers\Tabel::edit(), 0 passed in C:\xampp\htdocs\bpkad\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit()
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-28 19:55:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+CRITICAL - 2022-01-28 19:55:53 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2063')
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(27): CodeIgniter\BaseModel->find('2063')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit('2063')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-01-28 19:56:10 --> Too few arguments to function App\Controllers\Tabel::edit(), 0 passed in C:\xampp\htdocs\bpkad\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit()
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-28 19:58:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+CRITICAL - 2022-01-28 19:58:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2063')
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(27): CodeIgniter\BaseModel->find('2063')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit('2063')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-01-28 19:58:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+CRITICAL - 2022-01-28 19:58:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2064')
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(27): CodeIgniter\BaseModel->find('2064')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit('2064')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-01-28 19:59:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+CRITICAL - 2022-01-28 19:59:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2063')
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(27): CodeIgniter\BaseModel->find('2063')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit('2063')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-01-28 19:59:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+CRITICAL - 2022-01-28 19:59:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'id'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT *\nFROM "...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(142): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '2063')
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Tabel.php(27): CodeIgniter\BaseModel->find('2063')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Tabel->edit('2063')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tabel))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
