@@ -66,7 +66,8 @@ class ModelTabel extends Model
                                     ->where('kd_unit',$kegiatan->kd_unit)
                                     ->where('kd_sub',$kegiatan->kd_sub)
                                     ->where('Kd_Gab_Prog', $kegiatan->Kd_Gab_Prog)
-                                    ->where('Kd_Gab_Keg', $kegiatan->Kd_Gab_Keg)                                   
+                                    ->where('Kd_Gab_Keg', $kegiatan->Kd_Gab_Keg)
+                                    ->where('(anggaran > 0 or realisasi >0)')                                                             
                                     ->get();
         return $query;
     }

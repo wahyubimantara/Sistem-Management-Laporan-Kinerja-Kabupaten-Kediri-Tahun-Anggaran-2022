@@ -19,7 +19,7 @@
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>/css/sb-admin-2.min.css" rel="stylesheet">
 
-    <style>
+    <style type="text/css" media="screen, print">
         .table td,
         .table th {
             padding: .0.65rem;
@@ -32,55 +32,39 @@
 
         .table-bordered td,
         .table-bordered th {
-            border: 1px solid #3e3e3e;
+            border: 1px solid #3e3e3e !important;
         }
 
         .table thead th {
-            border-bottom: 2px #3e3e3e;
+            border-bottom: 2px #3e3e3e !important;
         }
 
         .table {
             color: #121212;
         }
 
-        .border-dark {
-            border-color: #000000 !important;
-        }
-
-        .kiri_kanan {
-            border-right: hidden !important;
-            border-left: hidden !important;
-        }
-
-        .kecilkan {
-            font-size: 0.8em;
-        }
-
-        .kiri {
-            border-left: hidden !important;
-        }
-
-        .kanan {
-            border-right: hidden !important;
-        }
-
-        .atas {
-            border-top-style: hidden !important;
+        .h6,
+        h6 {
+            font-size: 0.8rem;
         }
 
         @media print {
             @page {
                 size: Legal landscape;
+            }
+            
+            
 
+            .border-dark {
+                border-color: #000000 !important;
             }
         }
 
-        
 
         body {
-            margin-left: 3cm;
+            margin-left: 2.5cm;
             font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 400;
             line-height: 1.5;
             color: #858796;
@@ -92,13 +76,19 @@
 </head>
 
 <body id="page-top">
+    <?php
+
+    setlocale(LC_TIME, 'id_ID.utf8');
+
+    $hariIni = new DateTime();
+    ?>
 
     <div class="container-fluid">
 
         <div class="row">
 
             <div class="table-responsive">
-                <table class="table table-responsive-md table-bordered border-dark">
+                <table class="table table-responsive table-bordered">
                     <thead>
                         <tr style="text-align: center;">
                             <th rowspan="2">Kode</th>
@@ -120,25 +110,36 @@
                         <?php foreach ($program as $p) : ?>
                             <tr style=" font-weight: bold;">
                                 <td class="kecilkan"><strong><?php echo  $p->Kd_Gab_Prog; ?></strong></td>
-                                <td colspan="5"><strong><br><?php echo $nomor_program++ . '. ' . $p->Nm_Program; ?></br><br></strong></td>
+                                <td colspan="5">
+                                    <strong>
+                                        &emsp;
+                                        <ol start="<?php echo $nomor_program++; ?>">
+                                            <li><?php echo $p->Nm_Program; ?></li>
+                                        </ol>
+                                    </strong>
+
+                                </td>
                                 <td style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
                                 <td style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
                                 <td>100</td>
-                                <td colspan="1"><?php echo number_format((100.0 * $p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program), 2, ",", ".") ?></td>
+                                <td colspan="1"><?php echo number_format(($p->SUM_Realisasi_Program != 0) ? ($p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program) * 100 : 0, 2, ",", ".") ?></td>
                                 <td>%</td>
                             </tr>
-
                             <?php $nomor_kegiatan = 1 ?>
                             <?php $kegiatans = $model->get_kegiatan($p)->getResult() ?>
                             <?php foreach ($kegiatans as $k) : ?>
                                 <tr>
                                     <td class="kecilkan"><?php echo $k->Kd_Gab_Keg; ?></td>
-                                    <!-- <td>&nbsp;</td> -->
-                                    <td colspan="5">&emsp;<?php echo $nomor_kegiatan++ . '&emsp;' . $k->Nm_Kegiatan; ?></td>
+                                    <td style="width: 0.1rem; border-right: hidden !important;"></td>
+                                    <td colspan="4">
+                                        <ol start="<?php echo $nomor_kegiatan++; ?>" style="margin-top: 0.2rem;margin-bottom: 0.2rem;">
+                                            <li><?php echo $k->Nm_Kegiatan; ?></li>
+                                        </ol>
+                                    </td>
                                     <td style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
                                     <td style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
                                     <td>100</td>
-                                    <td colspan="1"><?php echo number_format((100.0 * $k->SUM_Realisasi / $k->SUM_Anggaran), 2, ",", ".") ?></td>
+                                    <td colspan="1"><?php echo number_format(($k->SUM_Realisasi != 0) ? ($k->SUM_Realisasi / $k->SUM_Anggaran) * 100 : 0, 2, ",", ".") ?></td>
                                     <td>%</td>
                                 </tr>
 
@@ -148,11 +149,14 @@
 
                                     <tr>
                                         <td class="kecilkan" rowspan="2" style="white-space: nowrap;"><?php echo $sub_k->Kd_Gab_Sub_Keg; ?></td>
-                                        <!-- <td>&nbsp;</td>
-                                        <td class="kiri_kanan">&nbsp;</td> -->
-                                        <td colspan="5">&emsp;&emsp;&ensp;<?php echo $nomor_sub_kegiatan++ . '&emsp;' . $sub_k->Nm_Sub_Kegiatan; ?></td>
-                                        <td style="text-align: right;">&nbsp</td>
-                                        <td style="text-align: right;">&nbsp</td>
+                                        <td style="width: 0.1rem;"></td>
+                                        <td style="width: 0.1rem;border-right: hidden !important;border-left: hidden !important;"></td>
+                                        <td colspan="3">
+                                            <ol start="<?php echo $nomor_sub_kegiatan++; ?>" style="margin-bottom: 0;">
+                                                <li><?php echo $sub_k->Nm_Sub_Kegiatan; ?></li>
+                                            </ol>
+                                        </td>
+                                        <td colspan="2"style="text-align: right;">&nbsp</td>
                                         <!-- <td>&nbsp;</td> -->
                                         <td colspan="4">&nbsp;</td>
                                         <!-- <td>&nbsp;</td> -->
@@ -161,14 +165,14 @@
                                     <tr>
                                         <!-- <td>&nbsp;</td>
                                         <td class="kiri_kanan">&nbsp;</td> -->
-                                        <td colspan="3" style="white-space: nowrap;">&emsp;&emsp;&emsp;&emsp;Indikator 1 :</td>
-                                        <td class="kiri" colspan="2" style="min-width: 15rem;"> Dana </td>
+                                        <td colspan="3" style="white-space: nowrap;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Indikator 1 :</td>
+                                        <td colspan="2" style="min-width: 15rem; border-left: hidden !important;"> Dana </td>
                                         <?php $anggaran_value = number_format($sub_k->Anggaran, 2, ",", "."); ?>
                                         <?php $realisasi_value = number_format($sub_k->Realisasi, 2, ",", "."); ?>
                                         <td style="text-align: right;"><?php echo $anggaran_value; ?></td>
                                         <td style="text-align: right;"><?php echo $realisasi_value; ?></td>
                                         <td>100</td>
-                                        <td colspan="1"><?php echo number_format((100.0 * $sub_k->Realisasi / $sub_k->Anggaran), 2, ",", ".") ?> </td>
+                                        <td colspan="1"><?php echo number_format(($sub_k->Realisasi != 0) ? ($sub_k->Realisasi / $sub_k->Anggaran) * 100 : 0, 2, ",", ".") ?> </td>
                                         <td>%</td>
                                     </tr>
 
@@ -177,12 +181,12 @@
                                     <?php foreach ($indikator as $i) : ?>
                                         <tr>
 
-                                            <td class="atas">&nbsp;</td>
+                                            <td style="border-top-style: hidden !important;">&nbsp;</td>
                                             <!-- <td class="kanan">&nbsp;</td> -->
                                             <!-- <td>&nbsp;</td> -->
 
-                                            <td colspan="3">&emsp;&emsp;&emsp;&emsp;Indikator <?php echo $nomor++ ?> :</td>
-                                            <td class="kiri" colspan="2"><?= $i->tolak_ukur; ?></td>
+                                            <td colspan="3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Indikator <?php echo $nomor++ ?> :</td>
+                                            <td colspan="2" style="border-left: hidden !important;"><?= $i->tolak_ukur; ?></td>
                                             <td colspan="2">&nbsp</td>
                                             <td><?php echo number_format($i->target_angka); ?></td>
                                             <td><?= $i->realisasi; ?> </td>
@@ -201,6 +205,19 @@
                     </tbody>
                 </table>
 
+            </div>
+        </div>
+        <div class="row" style="float:right; margin-top:5%">
+            <div class="card" style="width: 18rem; border:none; ">
+                <div class="card-body" style="color: black;">
+                    <h6 style="text-align: center;">Kediri,&nbsp;<?php echo strftime('%d %B %Y', $hariIni->getTimestamp()) ?></h6>
+                    <h6 style="text-align: center;"><?php echo  $ttd->jbt_pimpinan; ?></h6>
+                    <br> <br> <br> <br> <br>
+                    <h6 style="text-align: center; margin-bottom: 0rem; "><?php echo  $ttd->nm_pimpinan; ?></h6>
+                    <hr style="margin-top: 0rem; margin-bottom: 0rem; width:85%;border-top: 1px solid rgb(12 12 12 / 67%);">
+                    <h6 style="text-align: center; margin-top: 0rem; ">NIP.&nbsp;<?php echo  $ttd->nip_pimpinan; ?></h6>
+
+                </div>
             </div>
         </div>
 

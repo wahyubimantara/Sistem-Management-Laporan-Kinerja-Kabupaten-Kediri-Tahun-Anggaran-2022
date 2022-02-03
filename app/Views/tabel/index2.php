@@ -65,7 +65,7 @@
                             <td class ="kecilkan" style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
                             <td class ="kecilkan"style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
                             <td>100</td>
-                            <td colspan="2"><?php echo number_format((100.0*$p->SUM_Realisasi_Program/$p->SUM_Anggaran_Program),2,",",".") ?></td>
+                            <td colspan="2"><?php echo number_format(($p->SUM_Anggaran_Program!=0)?($p->SUM_Realisasi_Program/$p->SUM_Anggaran_Program)*100:0,2,",",".") ?></td>
                             <td>%</td>
                         </tr>
 
@@ -79,7 +79,7 @@
                                 <td class ="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
                                 <td class ="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
                                 <td>100</td>
-                                <td colspan="2"><?php echo number_format((100.0*$k->SUM_Realisasi/$k->SUM_Anggaran),2,",",".") ?></td>
+                                <td colspan="2"><?php echo number_format(($k->SUM_Anggaran!=0)?($k->SUM_Realisasi/$k->SUM_Anggaran)*100:0,2,",",".") ?></td>
                                 <td>%</td>
                             </tr>
                   
@@ -109,11 +109,11 @@
                                     <td class ="kecilkan" style="text-align: right;"><?php echo $anggaran_value; ?></td>
                                     <td class ="kecilkan" style="text-align: right;"><?php echo $realisasi_value; ?></td>
                                     <td>100</td>
-                                    <td colspan="2"><?php echo number_format((100.0*$sub_k->Realisasi/$sub_k->Anggaran),2,",",".") ?> </td>
+                                    <td colspan="2"><?php echo number_format(($sub_k->Anggaran!=0)?($sub_k->Realisasi/$sub_k->Anggaran)*100:0,2,",",".") ?> </td>
                                     <td>%</td>
                                 </tr>
-
-                             
+                                
+                                
                                 <?php $nomor=2 ?>
                                 <?php $indikator = $model->get_indikator($sub_k)->getResult() ?>
                                 <?php foreach ($indikator as $i) : ?>
