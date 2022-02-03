@@ -57,6 +57,7 @@ class Admin extends BaseController
             $kd_bidang = $this->request->getVar('kd_bidang');
             $kd_unit = $this->request->getVar('kd_unit');
             $kd_sub = $this->request->getVar('kd_sub');
+            $kunci = $this->request->getVar('kunci');
 
             $data =[
                 // 'id' => $userid,
@@ -65,7 +66,8 @@ class Admin extends BaseController
                 'kd_urusan' => $kd_urusan,
                 'kd_bidang' => $kd_bidang,
                 'kd_unit' => $kd_unit,
-                'kd_sub' => $kd_sub,  
+                'kd_sub' => $kd_sub,
+                'kunci' => $kunci,   
 
             ];
             $userModel = new ModelUser();

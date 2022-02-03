@@ -69,6 +69,12 @@
                       <input type="text" class="form-control" name="kd_sub" value="<?= $user->kd_sub ?>">
                     </div>
                   </div>
+                  <div class="mb-3 row">
+                    <label for="kode_sub" class="col-sm-2 col-form-label">Kunci</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="kunci" value="<?= $user->kunci ?>">
+                    </div>
+                  </div>
                   <!-- isi -->
 
 
@@ -138,6 +144,12 @@
                     <th scope="row">Kode Sub</th>
                     <td>:</td>
                     <td><?= $user->kd_sub; ?></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Kunci</th>
+                    <td>:</td>
+                    <td><?= $user->kunci; ?></td>
                   </tr>
 
                 </tbody>
