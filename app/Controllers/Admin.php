@@ -47,6 +47,24 @@ class Admin extends BaseController
         return json_encode($this->model->find($id));
     }
 
+    public function finalisasi(){
+        
+        if ($this->request->isAJAX()) {
+
+            $data =[
+                'kunci'=> 1,
+            ];
+            $userModel = new ModelUser();
+            $userModel->update($this->request->getVar('id'), $data); 
+
+            $msg = [
+                'sukses' => 'Data Berhasil difinalisasi'
+            ];
+            echo json_encode($msg);
+        }
+        
+    }
+
     public function updateUser(){
         
         if ($this->request) {
