@@ -120,7 +120,8 @@ class Admin extends BaseController
         $data['title'] = 'Ubah Password'; 
         $id = $this->request->getVar('id');
         $rules = [
-            'password'     => 'required|strong_password',
+            // 'password'     => 'required|strong_password',
+            'password'     => 'required',
             'pass_confirm' => 'required|matches[password]',
         ];
  

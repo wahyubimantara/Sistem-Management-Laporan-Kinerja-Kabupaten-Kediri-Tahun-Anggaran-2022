@@ -27,5 +27,25 @@ class Tabel extends BaseController
         return json_encode($this->Model_edit->find($id));
     }
 
+    public function simpan(){
+        
+        if ($this->request) {
+            $realisasi = $this->request->getPost('realisasi');
 
+            $data =[
+                
+                'realisasi'=> $realisasi,
+            ];
+            $this->Model_edit = new \App\Models\ModelGetID();
+            $this->Model_edit->update($this->request->getVar('id'), $data);  
+
+            $hasil['sukses']="Hore Anda Berhasil";
+            $hasil['error']= false;
+        
+        } else {
+            $hasil['sukses']=false;
+            $hasil['error']= "Error Bro";
+        }
+        return json_encode($hasil);
+    }
 }
