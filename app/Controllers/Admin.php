@@ -14,6 +14,7 @@ class Admin extends BaseController
     public function __construct()
     {
         $this->model = new \App\Models\ModelUser();
+
     }
     public function index()
     {

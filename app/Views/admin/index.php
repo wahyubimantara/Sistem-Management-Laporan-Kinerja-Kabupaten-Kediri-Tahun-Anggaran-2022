@@ -15,6 +15,8 @@
       <th scope="col">Email</th>
       <th scope="col">Role</th>
       <th scope="col" style="text-align: center;">Action</th>
+      <th scope="col">Status</th>
+      <th scope="col">Show</th>
     </tr>
   </thead>
   <tbody>
@@ -24,7 +26,13 @@
       <th scope="row"><?=$i++?></th>
       <td><?= $user->username; ?></td>
       <td><?= $user->email; ?></td>
-      <td><?= $user->name; ?></td>
+      <td>
+      <?php if ($user->name == 'admin') { ?>
+        <span class="badge badge-warning"><?= $user->name; ?></span>
+      <?php   } else {?>
+        <span class="badge badge-primary"><?= $user->name; ?></span>
+      <?php   } ?>
+      </td>
 
       <td style="text-align: center;">
               
@@ -41,8 +49,24 @@
             
             <i class="fas fa-trash"></i>
         </a>
-
      </td>
+
+     <td>
+     <?php if ($user->kunci == '0') { ?>
+        <span class="badge badge-warning">Belum Final</span>
+      <?php   } else {?>
+        <span class="badge badge-success">Final</span>
+      <?php   } ?>
+     </td>
+
+     <td>
+     <?php if ($user->name == 'user') { ?>
+      <a href= "<?= base_url(); ?>/show/a/<?= $user->userid;?>" target="_blank" class="btn btn-primary btn-circle btn-sm" title="Tampilkan SKPD">
+      <i class="far fa-eye"></i> 
+        </a>
+      <?php   } ?>
+     </td>
+     
     </tr>
     
     <?php endforeach; ?>

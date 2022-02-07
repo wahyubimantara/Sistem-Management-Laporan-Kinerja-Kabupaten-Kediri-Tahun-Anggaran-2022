@@ -1,0 +1,217 @@
+CRITICAL - 2022-02-07 01:49:21 --> Object of class CodeIgniter\Database\SQLSRV\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 01:49:42 --> Object of class CodeIgniter\Database\SQLSRV\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-07 01:59:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'id' to data type int.
+CRITICAL - 2022-02-07 01:59:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value 'id' to data type int.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "kd_urus...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "kd_urus...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "kd_urus...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(15): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 02:04:44 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:05:33 --> Trying to get property 'jbt_pimpinan' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print.php(214): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 214, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): view('tabel/print', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 02:15:29 --> Undefined variable: title
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(30): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-02-07 02:26:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+CRITICAL - 2022-02-07 02:26:37 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "Kd_Gab_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "Kd_Gab_...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "Kd_Gab_...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): App\Models\ModelTabel->get_where(Array, Array, Array, Array)
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-02-07 02:32:23 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:35:51 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:37:12 --> Call to undefined method App\Models\ModelUser::row
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('row', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:38:23 --> Call to undefined method App\Models\ModelUser::getRow
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('getRow', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:38:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:40:40 --> Call to undefined method App\Models\ModelUser::result
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('result', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:41:56 --> Call to undefined method App\Models\ModelUser::getResult
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('getResult', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:44:11 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:44:46 --> Call to undefined method App\Models\ModelUser::getRow
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('getRow', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:45:46 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:45:47 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:46:25 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:46:26 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:46:26 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:47:10 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:48:44 --> Undefined property: App\Controllers\Show::$builder
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:51:07 --> Undefined property: App\Controllers\Show::$builder
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:51:48 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-07 02:52:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value '$kd_urusan' to data type tinyint.
+CRITICAL - 2022-02-07 02:52:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value '$kd_urusan' to data type tinyint.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT "Kd_Gab_...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "Kd_Gab_...')
+#2 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "Kd_Gab_...', Array, false)
+#3 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#5 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(27): App\Models\ModelTabel->get_where('$kd_urusan', '$kd_bidang', '$kd_unit', '$kd_sub')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-02-07 02:54:09 --> Undefined property: App\Controllers\Show::$builder
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:54:25 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 02:56:53 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:57:28 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:57:30 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to int
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 02:58:32 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 03:00:55 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 03:08:15 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 03:10:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 03:11:53 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

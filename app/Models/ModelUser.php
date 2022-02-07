@@ -14,7 +14,7 @@ class ModelUser extends Model
 
     public function user_list(){
 
-        $query= $this->table("users")->select('users.id as userid, username,email, name,fullname,')
+        $query= $this->table("users")->select('users.id as userid, username,email, name,fullname,kunci')
                                     ->join('auth_groups_users', 'auth_groups_users.user_id = users.id')
                                     ->join('auth_groups', 'auth_groups.id = auth_groups_users.group_id')
                                     ->get();
@@ -29,6 +29,31 @@ class ModelUser extends Model
                                     ->where('users.id',$id)
                                     ->get();
         return $query;
+    }
+
+    public function get_kd_urusan($id=0){
+        $sql="SELECT kd_urusan FROM users WHERE id= $id";    
+        $query = $this->db->query($sql);
+        return $query;
+
+    }
+    public function get_kd_bidang($id=0){
+        $sql="SELECT kd_bidang FROM users WHERE id= $id";    
+        $query = $this->db->query($sql);
+        return $query;
+
+    }
+    public function get_kd_unit($id=0){
+        $sql="SELECT kd_unit FROM users WHERE id= $id";    
+        $query = $this->db->query($sql);
+        return $query;
+
+    }
+    public function get_kd_sub($id=0){
+        $sql="SELECT kd_sub FROM users WHERE id= $id";    
+        $query = $this->db->query($sql);
+        return $query;
+
     }
     
 

@@ -9,8 +9,8 @@ class ModelTabel extends Model
     protected $DBGroup = 'dbsql';
     protected $table = "coba";
     protected $allowedFields = [
-                                'Kd_Urusan'
-                                ,'Kd_Bidang'
+                                'kd_urusan'
+                                ,'kd_bidang'
                                 ,'kd_unit'
                                 ,'kd_sub'
                                 ,'Kd_Prog'
@@ -33,36 +33,36 @@ class ModelTabel extends Model
     ];
     protected $useTimestamps = false;
 
-    public function get_where($Kd_Urusan,$Kd_Bidang, $kd_unit, $kd_sub){
+    public function get_where($kd_urusan,$kd_bidang, $kd_unit, $kd_sub){
 
-        $query= $this->table("coba")->select('Kd_Gab_Prog, Nm_Program, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub,SUM(Anggaran)as SUM_Anggaran_Program, SUM(Realisasi)as SUM_Realisasi_Program' )
-                                    ->where('Kd_Urusan',$Kd_Urusan)
-                                    ->where('Kd_Bidang',$Kd_Bidang)
+        $query= $this->table("coba")->select('Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub,SUM(Anggaran)as SUM_Anggaran_Program, SUM(Realisasi)as SUM_Realisasi_Program' )
+                                    ->where('kd_urusan',$kd_urusan)
+                                    ->where('kd_bidang',$kd_bidang)
                                     ->where('kd_unit',$kd_unit)
                                     ->where('kd_sub',$kd_sub)
-                                    ->groupBy('Kd_Gab_Prog, Nm_Program, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub')
+                                    ->groupBy('Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub')
                                     ->get();
         return $query;
     }
 
     public function get_kegiatan($p){
 
-        $query= $this->table("coba")->select('Kd_Gab_Keg, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub, Nm_Kegiatan, Kd_Gab_Prog, SUM(Anggaran) SUM_Anggaran, SUM(Realisasi) SUM_Realisasi')
-                                    ->where('Kd_Urusan',$p->Kd_Urusan)
-                                    ->where('Kd_Bidang',$p->Kd_Bidang)
+        $query= $this->table("coba")->select('Kd_Gab_Keg, kd_urusan, kd_bidang, kd_unit, kd_sub, Nm_Kegiatan, Kd_Gab_Prog, SUM(Anggaran) SUM_Anggaran, SUM(Realisasi) SUM_Realisasi')
+                                    ->where('kd_urusan',$p->kd_urusan)
+                                    ->where('kd_bidang',$p->kd_bidang)
                                     ->where('kd_unit',$p->kd_unit)
                                     ->where('kd_sub',$p->kd_sub)
                                     ->where('Kd_Gab_Prog', $p->Kd_Gab_Prog)
-                                    ->groupBy('Kd_Gab_Keg, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub, Nm_Kegiatan, Kd_Gab_Prog')                             
+                                    ->groupBy('Kd_Gab_Keg, kd_urusan, kd_bidang, kd_unit, kd_sub, Nm_Kegiatan, Kd_Gab_Prog')                             
                                     ->get();
         return $query;
     }
 
     public function get_sub_kegiatan($kegiatan){
 
-        $query= $this->table("coba")->select('Kd_Gab_Prog,Kd_Gab_Keg,Kd_Gab_Sub_Keg, Kd_Urusan, Kd_Bidang, kd_unit, kd_sub, Nm_Sub_Kegiatan,Anggaran,Realisasi,Kd_Keg')
-                                    ->where('Kd_Urusan',$kegiatan->Kd_Urusan)
-                                    ->where('Kd_Bidang',$kegiatan->Kd_Bidang)
+        $query= $this->table("coba")->select('Kd_Gab_Prog,Kd_Gab_Keg,Kd_Gab_Sub_Keg, kd_urusan, kd_bidang, kd_unit, kd_sub, Nm_Sub_Kegiatan,Anggaran,Realisasi,Kd_Keg')
+                                    ->where('kd_urusan',$kegiatan->kd_urusan)
+                                    ->where('kd_bidang',$kegiatan->kd_bidang)
                                     ->where('kd_unit',$kegiatan->kd_unit)
                                     ->where('kd_sub',$kegiatan->kd_sub)
                                     ->where('Kd_Gab_Prog', $kegiatan->Kd_Gab_Prog)
@@ -84,8 +84,8 @@ class ModelTabel extends Model
     //                                                     kinerja_rinci.realisasi
     //                                             ')
     //                                            ->JOIN('coba','
-    //                                                             kinerja_rinci.kd_urusan = coba.Kd_Urusan
-    //                                                             AND kinerja_rinci.kd_bidang = coba.Kd_Bidang
+    //                                                             kinerja_rinci.kd_urusan = coba.kd_urusan
+    //                                                             AND kinerja_rinci.kd_bidang = coba.kd_bidang
     //                                                             AND kinerja_rinci.kd_unit = coba.kd_unit
     //                                                             AND kinerja_rinci.kd_sub = coba.kd_sub
     //                                                             AND kinerja_rinci.kd_prog = coba.Kd_Prog
@@ -93,8 +93,8 @@ class ModelTabel extends Model
     //                                                             AND kinerja_rinci.kd_keg = coba.Kd_Keg
     //                                                   ')
                                                 
-    //                                             ->WHERE('kinerja_rinci.kd_urusan', $sub_kegiatan->Kd_Urusan)
-    //                                             ->WHERE('kinerja_rinci.kd_bidang',$sub_kegiatan->Kd_Bidang) 
+    //                                             ->WHERE('kinerja_rinci.kd_urusan', $sub_kegiatan->kd_urusan)
+    //                                             ->WHERE('kinerja_rinci.kd_bidang',$sub_kegiatan->kd_bidang) 
     //                                             ->WHERE('kinerja_rinci.kd_unit',$sub_kegiatan->kd_unit )
     //                                             ->WHERE('kinerja_rinci.kd_sub',$sub_kegiatan->kd_sub )
     //                                             ->WHERE('coba.Kd_Gab_Prog',$sub_kegiatan->Kd_Gab_Prog )
@@ -124,16 +124,16 @@ class ModelTabel extends Model
     FROM coba
     
         INNER JOIN kinerja_rinci ON 
-        kinerja_rinci.kd_urusan = coba.Kd_Urusan
-        AND kinerja_rinci.kd_bidang = coba.Kd_Bidang
+        kinerja_rinci.kd_urusan = coba.kd_urusan
+        AND kinerja_rinci.kd_bidang = coba.kd_bidang
         AND kinerja_rinci.kd_unit = coba.kd_unit
         AND kinerja_rinci.kd_sub = coba.kd_sub
         AND kinerja_rinci.kd_prog = coba.Kd_Prog
         AND kinerja_rinci.id_prog = coba.Id_Prog
         AND kinerja_rinci.kd_keg = coba.Kd_Keg
         
-    WHERE coba.kd_urusan = $sub_kegiatan->Kd_Urusan AND
-            coba.kd_bidang = $sub_kegiatan->Kd_Bidang AND
+    WHERE coba.kd_urusan = $sub_kegiatan->kd_urusan AND
+            coba.kd_bidang = $sub_kegiatan->kd_bidang AND
             coba.kd_unit = $sub_kegiatan->kd_unit AND
             coba.kd_sub =$sub_kegiatan->kd_sub AND     
             coba.Kd_Gab_Sub_Keg='$ini'
