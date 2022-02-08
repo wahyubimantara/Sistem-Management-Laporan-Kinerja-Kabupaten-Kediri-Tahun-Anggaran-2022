@@ -122,7 +122,7 @@
                                 <td style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
                                 <td style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
                                 <td>100</td>
-                                <td colspan="1"><?php echo number_format(($p->SUM_Realisasi_Program != 0) ? ($p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program) * 100 : 0, 2, ",", ".") ?></td>
+                                <td colspan="1"><?php echo number_format(($p->SUM_Anggaran_Program != 0) ? ($p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program) * 100 : 0, 2, ",", ".") ?></td>
                                 <td>%</td>
                             </tr>
                             <?php $nomor_kegiatan = 1 ?>
@@ -139,7 +139,7 @@
                                     <td style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
                                     <td style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
                                     <td>100</td>
-                                    <td colspan="1"><?php echo number_format(($k->SUM_Realisasi != 0) ? ($k->SUM_Realisasi / $k->SUM_Anggaran) * 100 : 0, 2, ",", ".") ?></td>
+                                    <td colspan="1"><?php echo number_format(($k->SUM_Anggaran != 0) ? ($k->SUM_Realisasi / $k->SUM_Anggaran) * 100 : 0, 2, ",", ".") ?></td>
                                     <td>%</td>
                                 </tr>
 
@@ -172,7 +172,7 @@
                                         <td style="text-align: right;"><?php echo $anggaran_value; ?></td>
                                         <td style="text-align: right;"><?php echo $realisasi_value; ?></td>
                                         <td>100</td>
-                                        <td colspan="1"><?php echo number_format(($sub_k->Realisasi != 0) ? ($sub_k->Realisasi / $sub_k->Anggaran) * 100 : 0, 2, ",", ".") ?> </td>
+                                        <td colspan="1"><?php echo number_format(($sub_k->Anggaran != 0) ? ($sub_k->Realisasi / $sub_k->Anggaran) * 100 : 0, 2, ",", ".") ?> </td>
                                         <td>%</td>
                                     </tr>
 
@@ -207,7 +207,19 @@
 
             </div>
         </div>
-<!-- tempad ttd -->
+        <div class="row" style="float:right; margin-top:5%">
+            <div class="card" style="width: 18rem; border:none; ">
+                <div class="card-body" style="color: black;">
+                    <h6 style="text-align: center;">Kediri,&emsp;&ensp;&emsp;<?php echo strftime('%B %Y', $hariIni->getTimestamp()) ?></h6>
+                    <h6 style="text-align: center;"><?php echo  $ttd->jbt_pimpinan; ?></h6>
+                    <br> <br> <br> <br> <br>
+                    <h6 style="text-align: center; margin-bottom: 0rem; "><?php echo  $ttd->nm_pimpinan; ?></h6>
+                    <hr style="margin-top: 0rem; margin-bottom: 0rem; width:85%;border-top: 1px solid rgb(12 12 12 / 67%);">
+                    <h6 style="text-align: center; margin-top: 0rem; ">NIP.&nbsp;<?php echo  $ttd->nip_pimpinan; ?></h6>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->

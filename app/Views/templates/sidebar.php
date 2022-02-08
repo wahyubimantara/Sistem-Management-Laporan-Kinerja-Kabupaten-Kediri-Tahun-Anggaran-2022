@@ -53,7 +53,7 @@
 <li class="nav-item">
     <a class="nav-link" href="<?= base_url('tabel'); ?>">
         <i class="fas fa-table"></i>
-        <span>Tabel</span></a>
+        <span>Kinerja</span></a>
 </li>
 
 <!-- Divider -->

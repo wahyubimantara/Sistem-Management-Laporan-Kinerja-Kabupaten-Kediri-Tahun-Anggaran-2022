@@ -66,6 +66,24 @@ class Admin extends BaseController
         
     }
 
+    public function buttonFinal($id){
+        $data =[
+            'kunci'=> 1,
+        ];
+        $userModel = new ModelUser();
+            $userModel->update($id, $data);
+        return redirect()->to(base_url('/admin'));
+    }
+
+    public function buttonUnFinal($id){
+        $data =[
+            'kunci'=> 0,
+        ];
+        $userModel = new ModelUser();
+            $userModel->update($id, $data);
+        return redirect()->to(base_url('/admin'));
+    }
+
     public function updateUser(){
         
         if ($this->request) {

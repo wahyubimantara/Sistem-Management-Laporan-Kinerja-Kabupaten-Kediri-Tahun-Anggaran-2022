@@ -31,26 +31,9 @@ class ModelUser extends Model
         return $query;
     }
 
-    public function get_kd_urusan($id=0){
-        $sql="SELECT kd_urusan FROM users WHERE id= $id";    
-        $query = $this->db->query($sql);
-        return $query;
 
-    }
-    public function get_kd_bidang($id=0){
-        $sql="SELECT kd_bidang FROM users WHERE id= $id";    
-        $query = $this->db->query($sql);
-        return $query;
-
-    }
-    public function get_kd_unit($id=0){
-        $sql="SELECT kd_unit FROM users WHERE id= $id";    
-        $query = $this->db->query($sql);
-        return $query;
-
-    }
-    public function get_kd_sub($id=0){
-        $sql="SELECT kd_sub FROM users WHERE id= $id";    
+    public function get_kode($id=0){
+        $sql="SELECT kd_urusan,kd_bidang, kd_unit,kd_sub FROM users WHERE id= $id";    
         $query = $this->db->query($sql);
         return $query;
 

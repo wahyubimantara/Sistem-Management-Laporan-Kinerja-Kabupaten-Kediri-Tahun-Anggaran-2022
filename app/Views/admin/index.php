@@ -54,8 +54,14 @@
      <td>
      <?php if ($user->kunci == '0') { ?>
         <span class="badge badge-warning">Belum Final</span>
+        <a href= "<?= base_url(); ?>/Admin/buttonFinal/<?= $user->userid;?>"  class="btn btn-success btn-circle btn-sm" title="Klik Untuk Finalisasi">
+        <i class="far fa-check-circle"></i>
+        </a>
       <?php   } else {?>
         <span class="badge badge-success">Final</span>
+        <a href= "<?= base_url(); ?>/Admin/buttonUnFinal/<?= $user->userid;?>" class="btn btn-danger btn-circle btn-sm" title="Klik Untuk  Cancel Finalisasi">
+        <i class="far fa-times-circle"></i>
+        </a>
       <?php   } ?>
      </td>
 
@@ -94,5 +100,4 @@ function hapus($id){
 
 
 <?= $this->endSection(); ?>
- 
     

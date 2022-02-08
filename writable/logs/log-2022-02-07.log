@@ -215,3 +215,375 @@ CRITICAL - 2022-02-07 03:10:19 --> Call to undefined method CodeIgniter\Database
 CRITICAL - 2022-02-07 03:11:53 --> Object of class stdClass could not be converted to string
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2022-02-07 19:22:19 --> Call to undefined method App\Models\ModelTabel::getKode
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('getKode', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:22:32 --> Undefined property: App\Controllers\Show::$UntukShow
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:22:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::value()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 19:22:49 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::value()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 19:24:36 --> Call to undefined method App\Models\ModelTabel::getKode
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): CodeIgniter\Model->__call('getKode', Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:24:54 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 19:29:23 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row_array()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 19:31:48 --> Undefined offset: 1
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:31:49 --> Undefined offset: 1
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:31:50 --> Undefined offset: 1
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:32:38 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 330, Array)
+#1 C:\xampp\htdocs\bpkad\system\Database\Query.php(330): strtr('SELECT "Kd_Gab_...', Array)
+#2 C:\xampp\htdocs\bpkad\system\Database\Query.php(304): CodeIgniter\Database\Query->matchNamedBinds('SELECT "Kd_Gab_...', Array)
+#3 C:\xampp\htdocs\bpkad\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\bpkad\system\Database\SQLSRV\Builder.php(614): CodeIgniter\Database\BaseConnection->query('SELECT "Kd_Gab_...', Array, false)
+#6 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\SQLSRV\Builder->get()
+#7 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(44): CodeIgniter\Model->__call('get', Array)
+#8 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(29): App\Models\ModelTabel->get_where(Object(stdClass), 1, 4, 1)
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#11 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-02-07 19:39:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): App\Models\ModelUser->getKode('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:39:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): App\Models\ModelUser->getKode('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:39:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): App\Models\ModelUser->getKode('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:39:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): App\Models\ModelUser->getKode('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:42:14 --> Undefined property: App\Controllers\Show::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:43:53 --> Undefined property: App\Controllers\Show::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:43:58 --> Undefined property: App\Controllers\Show::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:46:02 --> Undefined property: App\Controllers\Show::$builder
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:46:34 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in C:\xampp\htdocs\bpkad\system\Model.php on line 723
+#0 C:\xampp\htdocs\bpkad\system\Model.php(723): CodeIgniter\Database\BaseBuilder->get('users')
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Model->__call('get', Array)
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 19:55:17 --> Undefined property: App\Controllers\Show::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 19:57:32 --> Undefined property: App\Controllers\Show::$db
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 20:00:23 --> Call to undefined method App\Models\ModelUser::row
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelUser.php(38): CodeIgniter\Model->__call('row', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): App\Models\ModelUser->getKode('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 20:00:33 --> Call to undefined method App\Models\ModelUser::row
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelUser.php(38): CodeIgniter\Model->__call('row', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): App\Models\ModelUser->getKode('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 20:00:34 --> Call to undefined method App\Models\ModelUser::row
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelUser.php(38): CodeIgniter\Model->__call('row', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): App\Models\ModelUser->getKode('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 20:00:48 --> Call to undefined method App\Models\ModelUser::getRow
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelUser.php(38): CodeIgniter\Model->__call('getRow', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(22): App\Models\ModelUser->getKode('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 20:01:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:01:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:01:39 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:01:41 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:03:33 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:04:35 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-02-07 20:04:50 --> Argument 2 passed to view() must be of the type array, object given, called in C:\xampp\htdocs\bpkad\app\Controllers\Show.php on line 35
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(35): view('tabel/print_adm...', Object(stdClass))
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 20:25:25 --> Object of class stdClass could not be converted to string
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-07 20:26:57 --> Undefined property: stdClass::$kd_bidang
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 20:26:59 --> Undefined property: stdClass::$kd_bidang
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 20:35:41 --> Use of undefined constant kd_bidang - assumed 'kd_bidang' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-02-07 20:39:10 --> Division by zero
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(28): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('10')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 20:39:25 --> Division by zero
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(28): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('11')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 20:39:38 --> Division by zero
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(28): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('10')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 20:40:02 --> Division by zero
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'C:\\xampp\\htdocs...', 125, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(28): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('10')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-07 21:07:36 --> Call to undefined method App\Models\ModelTabel::NOT_LIKE
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(43): CodeIgniter\Model->__call('NOT_LIKE', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(23): App\Models\ModelTabel->get_where('1', '2', '1', '1')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('10')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 21:08:14 --> Call to undefined method App\Models\ModelTabel::NOT_LIKE
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(43): CodeIgniter\Model->__call('NOT_LIKE', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(23): App\Models\ModelTabel->get_where('1', '2', '1', '1')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('10')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 21:17:53 --> Call to undefined method App\Models\ModelTabel::NOT_LIKE
+#0 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(43): CodeIgniter\Model->__call('NOT_LIKE', Array)
+#1 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(23): App\Models\ModelTabel->get_where('1', '5', '1', '1')
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#3 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-02-07 21:23:41 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::not_like()
+#0 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#1 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#2 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

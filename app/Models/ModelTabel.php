@@ -35,13 +35,15 @@ class ModelTabel extends Model
 
     public function get_where($kd_urusan,$kd_bidang, $kd_unit, $kd_sub){
 
-        $query= $this->table("coba")->select('Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub,SUM(Anggaran)as SUM_Anggaran_Program, SUM(Realisasi)as SUM_Realisasi_Program' )
-                                    ->where('kd_urusan',$kd_urusan)
-                                    ->where('kd_bidang',$kd_bidang)
-                                    ->where('kd_unit',$kd_unit)
-                                    ->where('kd_sub',$kd_sub)
-                                    ->groupBy('Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub')
-                                    ->get();
+        $sql="SELECT Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub,SUM(Anggaran)as SUM_Anggaran_Program, SUM(Realisasi)as SUM_Realisasi_Program
+            FROM coba
+            WHERE kd_urusan = $kd_urusan AND
+                  kd_bidang= $kd_bidang AND
+                  kd_unit = $kd_unit AND
+                  kd_sub= $kd_sub AND
+            NOT (Kd_Gab_Prog LIKE '%xx')
+            group by Kd_Gab_Prog, Nm_Program, kd_urusan, kd_bidang, kd_unit, kd_sub";
+        $query = $this->db->query($sql);
         return $query;
     }
 
