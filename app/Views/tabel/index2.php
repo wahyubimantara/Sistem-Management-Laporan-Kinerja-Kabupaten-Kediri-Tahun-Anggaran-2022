@@ -267,7 +267,7 @@
         var $id = $('#id').val();
         Swal.fire({
         title: 'Yakin Mau Finalisasi?',
-        html: `Data yang sudah difinalisasi bersifat final <br> Apabila ingin mengubahnya lagi harap hubungi Admin`,
+        html: `Data yang sudah difinalisasi bersifat final <br> Apabila ingin mengubahnya lagi harap hubungi <br>Admin (Bidang Akuntansi)`,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
