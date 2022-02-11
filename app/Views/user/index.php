@@ -12,11 +12,18 @@
         <div class="row g-0" style="margin-left:5%;margin-top:5%;">
           <div class="col-md-4" style="text-align:center;">
 
-            <img src="<?= base_url('/img/' .user()->user_image); ?>" class="img-fluid rounded-start" alt="<?=user()->username; ?>">
+            <img src="<?= base_url('/img/' . user()->user_image); ?>" class="img-fluid rounded-start" alt="<?= user()->username; ?>">
 
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <span class="badge badge-primary"><?=user()->username; ?></span>
+                <span class="badge badge-primary"><?= user()->username; ?></span>
+              </li>
+              <li class="list-group-item">
+                <span>Ubah Password</span>
+              <a href="<?= base_url(); ?>/user/changePassword/<?= user()->id; ?>" class="btn btn-warning btn-circle btn-sm" title="Ubah Password">
+                  <i class="fas fa-key"></i>
+                </a>
+                
               </li>
             </ul>
 
@@ -29,38 +36,38 @@
                   <tr>
                     <th scope="row">Username</th>
                     <td>:</td>
-                    <td><?=user()->username; ?></td>
+                    <td><?= user()->username; ?></td>
                   </tr>
 
                   <tr>
                     <th scope="row">Email</th>
                     <td>:</td>
-                    <td><?=user()->email; ?></td>
+                    <td><?= user()->email; ?></td>
                   </tr>
 
 
                   <tr>
                     <th scope="row">Kode Urusan</th>
                     <td>:</td>
-                    <td><?=user()->kd_urusan; ?></td>
+                    <td><?= user()->kd_urusan; ?></td>
                   </tr>
 
                   <tr>
                     <th scope="row">Kode Bidang</th>
                     <td>:</td>
-                    <td><?=user()->kd_bidang; ?></td>
+                    <td><?= user()->kd_bidang; ?></td>
                   </tr>
 
                   <tr>
                     <th scope="row">Kode Unit</th>
                     <td>:</td>
-                    <td><?=user()->kd_unit; ?></td>
+                    <td><?= user()->kd_unit; ?></td>
                   </tr>
 
                   <tr>
                     <th scope="row">Kode Sub</th>
                     <td>:</td>
-                    <td><?=user()->kd_sub; ?></td>
+                    <td><?= user()->kd_sub; ?></td>
                   </tr>
 
                 </tbody>
