@@ -29,7 +29,8 @@ class ModelTabel extends Model
                                 ,'Anggaran'
                                 ,'Realisasi'
                                 ,'Selisih'
-                                ,'persentase'
+                                ,'persentase',
+                                'id'
     ];
     protected $useTimestamps = false;
 
@@ -62,7 +63,7 @@ class ModelTabel extends Model
 
     public function get_sub_kegiatan($kegiatan){
 
-        $query= $this->table("coba")->select('Kd_Gab_Prog,Kd_Gab_Keg,Kd_Gab_Sub_Keg, kd_urusan, kd_bidang, kd_unit, kd_sub, Nm_Sub_Kegiatan,Anggaran,Realisasi,Kd_Keg')
+        $query= $this->table("coba")->select('id,Kd_Gab_Prog,Kd_Gab_Keg,Kd_Gab_Sub_Keg, kd_urusan, kd_bidang, kd_unit, kd_sub, Nm_Sub_Kegiatan,Anggaran,Realisasi,Kd_Keg,Kd_Prog,Id_Prog')
                                     ->where('kd_urusan',$kegiatan->kd_urusan)
                                     ->where('kd_bidang',$kegiatan->kd_bidang)
                                     ->where('kd_unit',$kegiatan->kd_unit)
@@ -133,17 +134,26 @@ class ModelTabel extends Model
         AND kinerja_rinci.kd_prog = coba.Kd_Prog
         AND kinerja_rinci.id_prog = coba.Id_Prog
         AND kinerja_rinci.kd_keg = coba.Kd_Keg
+
         
     WHERE coba.kd_urusan = $sub_kegiatan->kd_urusan AND
             coba.kd_bidang = $sub_kegiatan->kd_bidang AND
             coba.kd_unit = $sub_kegiatan->kd_unit AND
             coba.kd_sub =$sub_kegiatan->kd_sub AND     
-            coba.Kd_Gab_Sub_Keg='$ini'
+            coba.Kd_Gab_Sub_Keg='$ini' AND
+            deleted_at is null
+    ORDER BY kinerja_rinci.id ASC
     ";    
 
         $query = $this->db->query($sql);
         return $query;
 
+    }
+
+    public function get_7kode($id=0){
+        $sql="SELECT kd_urusan,kd_bidang, kd_unit,kd_sub,Kd_Prog,Id_Prog,Kd_Keg FROM coba WHERE id= $id";    
+        $query = $this->db->query($sql);
+        return $query;
     }
 
     

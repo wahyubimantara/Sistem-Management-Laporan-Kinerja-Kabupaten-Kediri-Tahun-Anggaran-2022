@@ -6,7 +6,7 @@
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
     <div class="row">
-        <div class="col-lg-11">
+        <div class="col-lg-11 table-responsive">
         <table class="table">
   <thead>
     <tr>
@@ -16,6 +16,7 @@
       <th scope="col">Role</th>
       <th scope="col" style="text-align: center;">Action</th>
       <th scope="col">Status</th>
+      <th scope="col">Edit</th>
       <th scope="col">Show</th>
     </tr>
   </thead>
@@ -63,6 +64,15 @@
         <i class="far fa-times-circle"></i>
         </a>
       <?php   } ?>
+     </td>
+
+     <td>
+     <?php if ($user->kunci == '0') { ?>
+     <?php if ($user->name == 'user') { ?>
+      <a href= "<?= base_url(); ?>/edit/EditSKPD/<?= $user->userid;?>" class="btn btn-warning btn-circle btn-sm" title="Edit Kinerja SKPD">
+     <i class="fas fa-edit"></i>
+    <?php   } ?>
+    <?php   } ?>
      </td>
 
      <td>

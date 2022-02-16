@@ -40,13 +40,6 @@
                   </tr>
 
                   <tr>
-                    <th scope="row">Email</th>
-                    <td>:</td>
-                    <td><?= user()->email; ?></td>
-                  </tr>
-
-
-                  <tr>
                     <th scope="row">Kode Urusan</th>
                     <td>:</td>
                     <td><?= user()->kd_urusan; ?></td>
