@@ -207,13 +207,13 @@
 
             </div>
         </div>
-        <div class="row" style="float:right; margin-top:5%">
+        <div class="row" style="float:right; ">
             <div class="card" style="width: 18rem; border:none; ">
                 <div class="card-body" style="color: black;">
-                    <h6 style="text-align: center;">Kediri,&emsp;&ensp;&emsp;<?php echo strftime('%B %Y', $hariIni->getTimestamp()) ?></h6>
+                    <h6 style="text-align: center;">Kediri,&emsp;<?php echo strftime('%B %Y', $hariIni->getTimestamp()) ?></h6>
                     <h6 style="text-align: center;"><?php echo  $ttd->jbt_pimpinan; ?></h6>
                     <br> <br> <br> <br>
-                    <h6 style="text-align: center; margin-bottom: 0rem; "><?php echo  $ttd->nm_pimpinan; ?></h6>
+                    <h6 style="text-align: center; margin-bottom: 0rem; "><strong><?php echo  $ttd->nm_pimpinan; ?></strong></h6>
                     <hr style="margin-top: 0rem; margin-bottom: 0rem; width:85%;border-top: 1px solid rgb(12 12 12 / 67%);">
                     <h6 style="text-align: center; margin-top: 0rem; ">NIP.&nbsp;<?php echo  $ttd->nip_pimpinan; ?></h6>
 
