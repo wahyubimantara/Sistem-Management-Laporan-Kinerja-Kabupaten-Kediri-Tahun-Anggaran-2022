@@ -1,6 +1,13 @@
 <?= $this->extend('templates/index'); ?>
 <?= $this->section('page_content'); ?>
-
+<?php 
+  function fnumber($v) 
+  {
+    if(round($v) == $v)
+        return round($v);
+    return number_format($v, 2, ',', '.');
+  }
+  ?>
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -142,7 +149,7 @@
                                         <td class="kiri">Indikator <?php echo $nomor++ ?> :</td>
                                         <td class="kiri" colspan="2"><?= $i->tolak_ukur; ?></td>
                                         <td colspan="2">&nbsp</td>
-                                        <td><?php echo number_format($i->target_angka); ?></td>
+                                        <td><?php echo fnumber($i->target_angka); ?></td>
                                         <td><?= $i->realisasi; ?> </td>
                                         <td class="kiri" style="width: 2%;">
                                             <?php $kunci = user()->kunci; ?>

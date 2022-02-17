@@ -75,6 +75,14 @@
 
 </head>
 
+<?php 
+  function fnumber($v) 
+  {
+    if(round($v) == $v)
+        return round($v);
+    return number_format($v, 2, ',', '.');
+  }
+  ?>
 <body id="page-top">
     <?php
 
@@ -233,7 +241,7 @@
                                             <td colspan="2" style="border-left: hidden !important;"><?= $i->tolak_ukur; ?></td>
                                             <td colspan="1">&nbsp</td>
                                             <td colspan="1">&nbsp</td>
-                                            <td><?php echo number_format($i->target_angka); ?></td>
+                                            <td><?php echo fnumber($i->target_angka); ?></td>
                                             <td><?= $i->realisasi; ?> </td>
                                             <td><?= $i->target_uraian; ?></td>
                                         </tr>
