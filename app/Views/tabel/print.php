@@ -51,9 +51,10 @@
         @media print {
             @page {
                 size: Legal landscape;
+                
             }
-            
-            
+
+
 
             .border-dark {
                 border-color: #000000 !important;
@@ -62,7 +63,7 @@
 
 
         body {
-            margin-left: 2.5cm;
+            /*margin-left: 1.5cm;*/
             font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             font-size: 0.75rem;
             font-weight: 400;
@@ -84,9 +85,51 @@
     ?>
 
     <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar-brand-icon" style="margin-left: 0.5rem; margin-top: 0.7rem;">
+                <img src="<?php echo base_url(); ?>/img/logo-pemkab.png" style="height: 45px;">
+            </div>
+            <div class="card" style="width: 30rem; border:none; margin: 0 auto;float: none;">
+                <div class="card-body" style="color: black; padding: 0.8rem;">
+                    <h6 style="text-align: center; margin-bottom: 0rem; font-size:14px;"><strong>LAPORAN KINERJA SATUAN KERJA PERANGKAT DAERAH TAHUN ANGGARAN 2021</strong></h6>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
+            <div class="table-responsive">
+                <table class="table table-responsive table-borderless">
+                    <tbody style="font-size: 12px;color:black; font-weight: bold;">
+                        <tr>
+                            <td style="min-width: 226px;">
+                                Urusan Pemerintahan
+                            </td>
+                            <td>:</td>
+                            
+                            <td><?php echo  $kop->Nm_Bidang_Gab; ?></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Unit Organisasi
+                            </td>
+                            <td>:</td>
+                            
+                            <td><?php echo  $kop->Nm_Unit_Gab; ?></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Sub Unit Organisasi
+                            </td>
+                            <td>:</td>
+                            
+                            <td><?php echo  $kop->Nm_Sub_Unit_Gab; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
+        <div class="row">
             <div class="table-responsive">
                 <table class="table table-responsive table-bordered">
                     <thead>
@@ -156,10 +199,15 @@
                                                 <li><?php echo $sub_k->Nm_Sub_Kegiatan; ?></li>
                                             </ol>
                                         </td>
-                                        <td colspan="2"style="text-align: right;">&nbsp</td>
-                                        <!-- <td>&nbsp;</td> -->
-                                        <td colspan="4">&nbsp;</td>
-                                        <!-- <td>&nbsp;</td> -->
+                                        <!-- <td colspan="6">&nbsp</td> -->
+                                        <td>&nbsp</td>
+                                        <td>&nbsp</td>
+                                        <td>&nbsp</td>
+                                        <td>&nbsp</td>
+                                        <td>&nbsp</td>
+                               
+                                  
+            
                                     </tr>
 
                                     <tr>
@@ -187,7 +235,8 @@
 
                                             <td colspan="3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Indikator <?php echo $nomor++ ?> :</td>
                                             <td colspan="2" style="border-left: hidden !important;"><?= $i->tolak_ukur; ?></td>
-                                            <td colspan="2">&nbsp</td>
+                                            <td colspan="1">&nbsp</td>
+                                            <td colspan="1">&nbsp</td>
                                             <td><?php echo number_format($i->target_angka); ?></td>
                                             <td><?= $i->realisasi; ?> </td>
                                             <td><?= $i->target_uraian; ?></td>

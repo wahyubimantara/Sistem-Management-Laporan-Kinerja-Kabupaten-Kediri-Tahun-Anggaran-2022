@@ -15,6 +15,7 @@ class Cetak extends BaseController
         $Kd_Bidang=user()->kd_bidang;
         $kd_unit=user()->kd_unit;
         $kd_sub=user()->kd_sub;
+        $data['kop'] = $this->model->get_kop($Kd_Urusan,$Kd_Bidang, $kd_unit, $kd_sub)->getRow();
         $data['program'] = $this->model->get_where($Kd_Urusan,$Kd_Bidang, $kd_unit, $kd_sub)->getResult();
         $data['model'] = $this->model;
         $this->TTD = new \App\Models\ModelTTD();

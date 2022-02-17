@@ -9,10 +9,26 @@ class ModelTabel extends Model
     protected $DBGroup = 'dbsql';
     protected $table = "coba";
     protected $allowedFields = [
-        'kd_urusan', 'kd_bidang', 'kd_unit', 'kd_sub', 'Kd_Prog', 'kd_unit90', 'Id_Prog', 'kd_program', 'Kd_Keg', 'kd_kegiatan', 'kd_sub_kegiatan', 'Kd_Gab_Prog', 'Kd_Gab_Keg', 'Kd_Gab_Sub_Keg', 'Nm_Program', 'Nm_Kegiatan', 'Nm_Sub_Kegiatan', 'Anggaran', 'Realisasi', 'Selisih', 'persentase',
+        'kd_urusan', 'kd_bidang', 'kd_unit', 'kd_sub', 'Kd_Prog', 'kd_unit90', 'Id_Prog', 'kd_program', 'Kd_Keg', 'kd_kegiatan', 'kd_sub_kegiatan', 'Kd_Gab_Prog', 'Kd_Gab_Keg', 'Kd_Gab_Sub_Keg','Nm_Bidang_Gab','Nm_Unit_Gab','Nm_Sub_Unit_Gab', 'Nm_Program', 'Nm_Kegiatan', 'Nm_Sub_Kegiatan', 'Anggaran', 'Realisasi', 'Selisih', 'persentase',
         'id'
     ];
     protected $useTimestamps = false;
+
+    public function get_kop($kd_urusan, $kd_bidang, $kd_unit, $kd_sub)
+    {
+
+        $sql = "SELECT kd_urusan, kd_bidang, kd_unit, kd_sub,Nm_Bidang_Gab,Nm_Unit_Gab,Nm_Sub_Unit_Gab
+        FROM coba
+        WHERE   kd_urusan = $kd_urusan AND
+                kd_bidang= $kd_bidang AND
+                kd_unit = $kd_unit AND
+                kd_sub= $kd_sub
+        group by  kd_urusan, kd_bidang, kd_unit, kd_sub,Nm_Bidang_Gab,Nm_Unit_Gab,Nm_Sub_Unit_Gab
+            ";
+            
+        $query = $this->db->query($sql);
+        return $query;
+    }
 
     public function get_where($kd_urusan, $kd_bidang, $kd_unit, $kd_sub)
     {

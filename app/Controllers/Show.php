@@ -19,7 +19,7 @@ class Show extends BaseController
         $kd_unit = $this->UntukShow->get_kode($id)->getRow('kd_unit');
         $kd_sub = $this->UntukShow->get_kode($id)->getRow('kd_sub');
 
-    
+        $data['kop'] = $this->model->get_kop($kd_urusan,$kd_bidang, $kd_unit, $kd_sub)->getRow();
         $data['program'] = $this->model->get_where($kd_urusan,$kd_bidang, $kd_unit, $kd_sub)->getResult();
         $data['model'] = $this->model;
         $this->TTD = new \App\Models\ModelTTD();
