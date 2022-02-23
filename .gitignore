@@ -3,6 +3,8 @@ writable/*
 tests/*
 .env
 system/*
+app/Config/Database.php
+app/Config/Database - Copy.php
 .no-header.php-cs-fixer.dist.php
 composer.lock
 depfile.yaml
