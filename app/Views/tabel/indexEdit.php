@@ -393,10 +393,16 @@
             success: function(hasil) {
                 var $obj = $.parseJSON(hasil);
                 if ($obj.id != '') {
+                    let v = 0;
+
+                    if($obj.target_angka - Math.floor($obj.target_angka) == 0)
+                        v = parseInt($obj.target_angka )
+                    else
+                        v = $obj.target_angka.toFixed(2);
                     $('#id').val($obj.id);
                     $('#indikator_isi2').val($obj.tolak_ukur);
-                    $('#indikator_satuan').val($obj.target_angka);
-                    $('#indikator_target').val($obj.target_uraian);
+                    $('#indikator_satuan').val($obj.target_uraian);
+                    $('#indikator_target').val(v);
 
                 }
             }
