@@ -395,6 +395,9 @@
                 if ($obj.id != '') {
                     $('#id').val($obj.id);
                     $('#indikator_isi2').val($obj.tolak_ukur);
+                    $('#indikator_satuan').val($obj.target_angka);
+                    $('#indikator_target').val($obj.target_uraian);
+
                 }
             }
         });
