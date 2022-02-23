@@ -237,6 +237,18 @@
                                     <input type="text" class="form-control" id="indikator_isi2">
                                 </div>
                             </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">Satuan</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="indikator_satuan">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label class="col-sm-2 col-form-label">Target</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="indikator_target">
+                                </div>
+                            </div>
                         </div>
 
                         <div class="modal-footer">
@@ -398,6 +410,8 @@
             data: {
                 id: $id,
                 tolak_ukur: $indikator,
+                satuan: $('#indikator_satuan').val(),
+                target: $('#indikator_target').val()
             },
 
             success: function(hasil) {

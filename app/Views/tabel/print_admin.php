@@ -260,6 +260,7 @@
 
             </div>
         </div>
+        <!--
         <div class="row" style="float:right; ">
             <div class="card" style="width: 18rem; border:none; ">
                 <div class="card-body" style="color: black;">
@@ -273,6 +274,7 @@
                 </div>
             </div>
         </div>
+                                    -->
     </div>
 
     <!-- Bootstrap core JavaScript-->

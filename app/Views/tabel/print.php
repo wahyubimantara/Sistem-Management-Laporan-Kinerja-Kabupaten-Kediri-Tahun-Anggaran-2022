@@ -263,7 +263,7 @@
 
             </div>
         </div>
-        <div class="row" style="float:right; ">
+        <div class="row" style="float:right; display: inline; break-inside: avoid">
             <div class="card" style="width: 18rem; border:none; ">
                 <div class="card-body" style="color: black;">
                     <h6 style="text-align: center;">Kediri,&emsp;<?php echo strftime('%B %Y', $hariIni->getTimestamp()) ?></h6>

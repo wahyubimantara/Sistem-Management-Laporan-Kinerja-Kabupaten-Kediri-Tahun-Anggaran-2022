@@ -1,9 +1,11 @@
-*
-!*/
-
-# track this file
-!.gitignore
-
-# whitelist everything in ./config/
-!app/**
-!public/**
+vendor/*
+writable/*
+tests/*
+.env
+system/*
+.no-header.php-cs-fixer.dist.php
+composer.lock
+depfile.yaml
+env copy
+LICENSE
+project1.sql

@@ -58,6 +58,8 @@ class Tabel extends BaseController
             $data =[
                 
                 'tolak_ukur'=> $indikator,
+                'target_angka' => $this->request->getPost('target'),
+                'target_uraian' => $this->request->getPost('satuan')
             ];
             $this->Model_edit = new \App\Models\ModelGetID();
             $this->Model_edit->update($this->request->getVar('id'), $data);  
