@@ -1,0 +1,159 @@
+ERROR - 2022-02-16 01:48:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+CRITICAL - 2022-02-16 01:48:40 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\bpkad\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/indexEdit', Array, true)
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Edit.php(40): view('tabel/indexEdit', Array)
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Edit->EditSKPD('8')
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edit))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-16 01:49:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+CRITICAL - 2022-02-16 01:49:06 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT id,Kd_Ga...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,Kd_Ga...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT id,Kd_Ga...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\indexEdit.php(102): App\Models\ModelTabel->get_sub_kegiatan(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/indexEdit', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Edit.php(40): view('tabel/indexEdit', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Edit->EditSKPD('8')
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edit))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-02-16 01:49:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+CRITICAL - 2022-02-16 01:49:56 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT id,Kd_Ga...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,Kd_Ga...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT id,Kd_Ga...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\indexEdit.php(102): App\Models\ModelTabel->get_sub_kegiatan(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/indexEdit', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Edit.php(40): view('tabel/indexEdit', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Edit->EditSKPD('8')
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edit))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2022-02-16 01:50:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+CRITICAL - 2022-02-16 01:50:02 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '1'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT id,Kd_Ga...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,Kd_Ga...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT id,Kd_Ga...')
+#3 C:\xampp\htdocs\bpkad\app\Views\tabel\indexEdit.php(102): App\Models\ModelTabel->get_sub_kegiatan(Object(stdClass))
+#4 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/indexEdit', Array, true)
+#7 C:\xampp\htdocs\bpkad\app\Controllers\Edit.php(40): view('tabel/indexEdit', Array)
+#8 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Edit->EditSKPD('8')
+#9 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edit))
+#10 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-02-16 01:59:55 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 58736640 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-16 02:00:41 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 56639488 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-16 02:01:18 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 62930944 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-16 02:02:12 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65028096 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-16 02:04:37 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-16 21:30:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+CRITICAL - 2022-02-16 21:30:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kd_urusa...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_urusa...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kd_urusa...')
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(18): App\Models\ModelTabel->get_kop('4', '1', '4', '1')
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-16 21:31:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+CRITICAL - 2022-02-16 21:31:38 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kd_urusa...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_urusa...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kd_urusa...')
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(18): App\Models\ModelTabel->get_kop('4', '1', '4', '1')
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-16 21:31:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+CRITICAL - 2022-02-16 21:31:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kd_urusa...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_urusa...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kd_urusa...')
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(18): App\Models\ModelTabel->get_kop('4', '1', '4', '1')
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-16 21:31:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+CRITICAL - 2022-02-16 21:31:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kd_urusa...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_urusa...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kd_urusa...')
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(18): App\Models\ModelTabel->get_kop('4', '1', '4', '1')
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2022-02-16 21:31:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+CRITICAL - 2022-02-16 21:31:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'group'.
+#0 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(670): CodeIgniter\Database\SQLSRV\Connection->execute('SELECT kd_urusa...')
+#1 C:\xampp\htdocs\bpkad\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_urusa...')
+#2 C:\xampp\htdocs\bpkad\app\Models\ModelTabel.php(29): CodeIgniter\Database\BaseConnection->query('SELECT kd_urusa...')
+#3 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(18): App\Models\ModelTabel->get_kop('4', '1', '4', '1')
+#4 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-02-16 21:32:33 --> Trying to get property 'Nm_Bidang_Gab' of non-object
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 108, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Cetak.php(24): view('tabel/print', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Cetak->index()
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-02-16 21:35:31 --> Undefined variable: kop
+#0 C:\xampp\htdocs\bpkad\app\Views\tabel\print_admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\bpkad\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\bpkad\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\bpkad\system\Common.php(1097): CodeIgniter\View\View->render('tabel/print_adm...', Array, true)
+#4 C:\xampp\htdocs\bpkad\app\Controllers\Show.php(28): view('tabel/print_adm...', Array)
+#5 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(824): App\Controllers\Show->a('8')
+#6 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Show))
+#7 C:\xampp\htdocs\bpkad\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\bpkad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\bpkad\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
