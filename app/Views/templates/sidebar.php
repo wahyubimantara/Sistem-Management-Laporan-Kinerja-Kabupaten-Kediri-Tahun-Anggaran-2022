@@ -51,7 +51,7 @@
 
 <!-- Nav Item - MTabel -->
 <li class="nav-item">
-    <a class="nav-link" href="<?= base_url('tabel'); ?>">
+    <a class="nav-link" href="<?= base_url('EditKinerja'); ?>">
         <i class="fas fa-table"></i>
         <span>Kinerja</span></a>
 </li>

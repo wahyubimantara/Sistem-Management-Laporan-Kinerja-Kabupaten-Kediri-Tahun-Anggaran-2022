@@ -20,28 +20,54 @@
     <link href="<?= base_url(); ?>/css/sb-admin-2.min.css" rel="stylesheet">
 
     <style type="text/css" media="screen, print">
-        .table td,
+        .table td{
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 2px;
+            vertical-align: middle;
+        }
+        
         .table th {
             padding: .0.65rem;
             vertical-align: middle;
         }
-
         .table thead th {
             vertical-align: middle;
         }
 
         .table-bordered td,
         .table-bordered th {
-            border: 1px solid #3e3e3e !important;
+            border: 1px solid #818582 !important;
         }
 
         .table thead th {
-            border-bottom: 2px #3e3e3e !important;
+            border-bottom: 2px #818582 !important;
         }
 
         .table {
             color: #121212;
         }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .kode{
+            padding-right: 2px;
+        }
+
+        td {
+            line-height: 1.3;
+        }
+        
+        tr.lv1 td {
+            line-height: 1.7;
+            font-weight: bold;
+        }
+        .kiri {
+            border-left: hidden !important;
+        }
+
 
         .h6,
         h6 {
@@ -99,7 +125,7 @@
             </div>
             <div class="card" style="width: 30rem; border:none; margin: 0 auto;float: none;">
                 <div class="card-body" style="color: black; padding: 0.8rem;">
-                    <h6 style="text-align: center; margin-bottom: 0rem; font-size:14px;"><strong>LAPORAN KINERJA SATUAN KERJA PERANGKAT DAERAH TAHUN ANGGARAN 2021</strong></h6>
+                    <h6 style="text-align: center; margin-bottom: 0rem; font-size:14px;"><strong>LAPORAN KINERJA SATUAN KERJA PERANGKAT DAERAH TAHUN ANGGARAN 2022</strong></h6>
                 </div>
             </div>
         </div>
@@ -108,29 +134,19 @@
             <div class="table-responsive">
                 <table class="table table-responsive table-borderless">
                     <tbody style="font-size: 12px;color:black; font-weight: bold;">
-                        <tr>
-                            <td style="min-width: 226px;">
-                                Urusan Pemerintahan
-                            </td>
-                            <td>:</td>
-
-                            <td><?php echo  $kop->Nm_Bidang_Gab; ?></td>
-                        </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
                         <tr>
                             <td>
-                                Unit Organisasi
+                                Sub Unit SKPD
                             </td>
                             <td>:</td>
 
-                            <td><?php echo  $kop->Nm_Unit_Gab; ?></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Sub Unit Organisasi
-                            </td>
-                            <td>:</td>
-
-                            <td><?php echo  $kop->Nm_Sub_Unit_Gab; ?></td>
+                            <td><?php echo  $kop->namaSubUnit; ?></td>
                         </tr>
                     </tbody>
                 </table>
@@ -140,142 +156,45 @@
 
         <div class="row">
             <div class="table-responsive">
-                <table class="table table-responsive table-bordered">
-                    <thead>
-                        <tr style="text-align: center;">
-                            <th rowspan="2">Kode</th>
-                            <th rowspan="2" colspan="5">Uraian</th>
-                            <th colspan="2">Belanja</th>
-                            <th colspan="3">Hasil</th>
+            <table class="table table-responsive-md table-bordered border-dark">
+                <thead>
+                    <tr style="text-align: center;">
+                        <th rowspan="2">Kode</th>
+                        <th rowspan="2">Uraian (Program/Kegiatan/Sub Kegiatan/Indikator)</th>
+                        <th colspan="2">Belanja</th>
+                        <th colspan="4">Hasil</th>
+                    </tr>
+                    <tr style="text-align: center;">
+                        <th>Anggaran</th>
+                        <th>Realisasi</th>
+                        <th>Rencana</th>
+                        <th colspan="2">Realisasi</th>
+                        <th>Satuan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php foreach ($storeProcedure as $sp) : ?>
+                        <tr class="lv<?php echo $sp->level ?>">
+                                <td class="kode"><?php echo  $sp->kode; ?></td>
+                                <td style="padding-left: <?php echo $sp->level . '%'?>;"><?php echo  $sp->uraian; ?></td>
+                                <td style="text-align: right; "><?php echo $sp->anggaranBlj == null ? "" : number_format($sp->anggaranBlj, 2, ",", ".")  ; ?></td>
+                                <td style="text-align: right; "><?php echo $sp->realisasiBlj == null ? "" : number_format($sp->realisasiBlj, 2, ",", ".") ; ?></td>
+                                <td style="text-align: right; "><?php echo  $sp->target; ?></td>
+                                <td colspan="2" style="text-align: right; "><?php echo  $sp->realisasi; ?></td>
+                                
+                                <td style="text-align:center; "><?php echo  $sp->satuan; ?></td>
                         </tr>
-                        <tr style="text-align: center;">
-                            <th>Anggaran</th>
-                            <th>Realisasi</th>
-                            <th>Rencana</th>
-                            <th colspan="1">Realisasi</th>
-                            <th>Satuan</th>
-                        </tr>
-                    </thead>
+                        
+                    <?php endforeach ?>
+                    <!-- End Loop-->
 
-                    <tbody>
-                        <?php $nomor_program = 1 ?>
-                        <?php foreach ($program as $p) : ?>
-                            <tr style=" font-weight: bold;">
-                                <td class="kecilkan"><strong><?php echo  $p->Kd_Gab_Prog; ?></strong></td>
-                                <td colspan="5">
-                                    <strong>
-                                        &emsp;
-                                        <ol start="<?php echo $nomor_program++; ?>">
-                                            <li><?php echo $p->Nm_Program; ?></li>
-                                        </ol>
-                                    </strong>
-
-                                </td>
-                                <td style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
-                                <td style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
-                                <td>100</td>
-                                <td colspan="1"><?php echo number_format(($p->SUM_Anggaran_Program != 0) ? ($p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program) * 100 : 0, 2, ",", ".") ?></td>
-                                <td>%</td>
-                            </tr>
-                            <?php $nomor_kegiatan = 1 ?>
-                            <?php $kegiatans = $model->get_kegiatan($p)->getResult() ?>
-                            <?php foreach ($kegiatans as $k) : ?>
-                                <tr>
-                                    <td class="kecilkan"><?php echo $k->Kd_Gab_Keg; ?></td>
-                                    <td style="width: 0.1rem; border-right: hidden !important;"></td>
-                                    <td colspan="4">
-                                        <ol start="<?php echo $nomor_kegiatan++; ?>" style="margin-top: 0.2rem;margin-bottom: 0.2rem;">
-                                            <li><?php echo $k->Nm_Kegiatan; ?></li>
-                                        </ol>
-                                    </td>
-                                    <td style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
-                                    <td style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
-                                    <td>100</td>
-                                    <td colspan="1"><?php echo number_format(($k->SUM_Anggaran != 0) ? ($k->SUM_Realisasi / $k->SUM_Anggaran) * 100 : 0, 2, ",", ".") ?></td>
-                                    <td>%</td>
-                                </tr>
-
-                                <?php $nomor_sub_kegiatan = 1 ?>
-                                <?php $sub_kegiatans = $model->get_sub_kegiatan($k)->getResult() ?>
-                                <?php foreach ($sub_kegiatans as $sub_k) : ?>
-
-                                    <tr>
-                                        <td class="kecilkan" rowspan="2" style="white-space: nowrap;"><?php echo $sub_k->Kd_Gab_Sub_Keg; ?></td>
-                                        <td style="width: 0.1rem;"></td>
-                                        <td style="width: 0.1rem;border-right: hidden !important;border-left: hidden !important;"></td>
-                                        <td colspan="3">
-                                            <ol start="<?php echo $nomor_sub_kegiatan++; ?>" style="margin-bottom: 0;">
-                                                <li><?php echo $sub_k->Nm_Sub_Kegiatan; ?></li>
-                                            </ol>
-                                        </td>
-                                        <!-- <td colspan="6">&nbsp</td> -->
-                                        <td>&nbsp</td>
-                                        <td>&nbsp</td>
-                                        <td>&nbsp</td>
-                                        <td>&nbsp</td>
-                                        <td>&nbsp</td>
-                                 
-                                    </tr>
-
-                                    <tr>
-                                        <!-- <td>&nbsp;</td>
-                                        <td class="kiri_kanan">&nbsp;</td> -->
-                                        <td colspan="3" style="white-space: nowrap;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Indikator 1 :</td>
-                                        <td colspan="2" style="min-width: 15rem; border-left: hidden !important;"> Dana </td>
-                                        <?php $anggaran_value = number_format($sub_k->Anggaran, 2, ",", "."); ?>
-                                        <?php $realisasi_value = number_format($sub_k->Realisasi, 2, ",", "."); ?>
-                                        <td style="text-align: right;"><?php echo $anggaran_value; ?></td>
-                                        <td style="text-align: right;"><?php echo $realisasi_value; ?></td>
-                                        <td>100</td>
-                                        <td colspan="1"><?php echo number_format(($sub_k->Anggaran != 0) ? ($sub_k->Realisasi / $sub_k->Anggaran) * 100 : 0, 2, ",", ".") ?> </td>
-                                        <td>%</td>
-                                    </tr>
-
-                                    <?php $nomor = 2 ?>
-                                    <?php $indikator = $model->get_indikator($sub_k)->getResult() ?>
-                                    <?php foreach ($indikator as $i) : ?>
-                                        <tr>
-
-                                            <td style="border-top-style: hidden !important;">&nbsp;</td>
-                                            <td colspan="3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Indikator <?php echo $nomor++ ?> :</td>
-                                            <td colspan="2" style="border-left: hidden !important;"><?= $i->tolak_ukur; ?></td>
-                                            <td colspan="1">&nbsp</td>
-                                            <td colspan="1">&nbsp</td>
-                                            <td><?php echo fnumber($i->target_angka); ?></td>
-                                            <td><?= $i->realisasi; ?> </td>
-                                            <td><?= $i->target_uraian; ?></td>
-                                        </tr>
-                                    <?php endforeach ?>
-                                    <!-- End Loop Indikator -->
-                                <?php endforeach ?>
-                                <!-- End Loop sub kegiatan -->
-                            <?php endforeach ?>
-                            <!-- End Loop Kegiatan -->
-                            </tr>
-                        <?php endforeach ?>
-                        <!-- End Loop Program -->
-
-                    </tbody>
-                </table>
+                </tbody>
+            </table>
 
             </div>
         </div>
-        <!--
-        <div class="row" style="float:right; ">
-            <div class="card" style="width: 18rem; border:none; ">
-                <div class="card-body" style="color: black;">
-                    <h6 style="text-align: center;">Kediri,&emsp;<?php echo strftime('%B %Y', $hariIni->getTimestamp()) ?></h6>
-                    <h6 style="text-align: center;"><?php echo  $ttd->jbt_pimpinan; ?></h6>
-                    <br> <br> <br> <br>
-                    <h6 style="text-align: center; margin-bottom: 0rem; "><strong><?php echo  $ttd->nm_pimpinan; ?></strong></h6>
-                    <hr style="margin-top: 0rem; margin-bottom: 0rem; width:85%;border-top: 1px solid rgb(12 12 12 / 67%);">
-                    <h6 style="text-align: center; margin-top: 0rem; ">NIP.&nbsp;<?php echo  $ttd->nip_pimpinan; ?></h6>
 
-                </div>
-            </div>
-        </div>
-                                    -->
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url(); ?>/vendor/jquery/jquery.min.js"></script>

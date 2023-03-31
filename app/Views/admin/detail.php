@@ -44,37 +44,26 @@
                   </div>
 
                   <div class="mb-3 row">
-                    <label for="kode_urusan" class="col-sm-2 col-form-label">Kode Urusan</label>
+                    <label for="kode_urusan" class="col-sm-2 col-form-label">Nama SKPD</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" name="kd_urusan" value="<?= $user->kd_urusan ?>">
+                      <input type="text" class="form-control" name="kd_urusan" value="<?= $user->fullname ?>">
                     </div>
                   </div>
 
                   <div class="mb-3 row">
-                    <label for="kode_bidang" class="col-sm-2 col-form-label">Kode Bidang</label>
+                    <label for="kode_bidang" class="col-sm-2 col-form-label">Kode SKPD</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" name="kd_bidang" value="<?= $user->kd_bidang ?>">
+                      <input type="text" class="form-control" name="kd_bidang" value="<?= $user->kodeSkpd ?>">
                     </div>
                   </div>
 
                   <div class="mb-3 row">
-                    <label for="kode_unit" class="col-sm-2 col-form-label">Kode Unit</label>
+                    <label for="kode_unit" class="col-sm-2 col-form-label">Kode Unit SKPD</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" name="kd_unit" value="<?= $user->kd_unit ?>">
+                      <input type="text" class="form-control" name="kd_unit" value="<?= $user->kodeUnitSkpd ?>">
                     </div>
                   </div>
-                  <div class="mb-3 row">
-                    <label for="kode_sub" class="col-sm-2 col-form-label">Kode Sub</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="kd_sub" value="<?= $user->kd_sub ?>">
-                    </div>
-                  </div>
-                  <div class="mb-3 row">
-                    <label for="kode_sub" class="col-sm-2 col-form-label">Kunci</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="kunci" value="<?= $user->kunci ?>">
-                    </div>
-                  </div>
+                  
                   <!-- isi -->
 
 
@@ -123,27 +112,21 @@
 
 
                   <tr>
-                    <th scope="row">Kode Urusan</th>
+                    <th scope="row">Nama SKPD</th>
                     <td>:</td>
-                    <td><?= $user->kd_urusan; ?></td>
+                    <td><?= $user->fullname; ?></td>
                   </tr>
 
                   <tr>
-                    <th scope="row">Kode Bidang</th>
+                    <th scope="row">Kode SKPD</th>
                     <td>:</td>
-                    <td><?= $user->kd_bidang; ?></td>
+                    <td><?= $user->kodeSkpd; ?></td>
                   </tr>
 
                   <tr>
-                    <th scope="row">Kode Unit</th>
+                    <th scope="row">Kode Unit SKPD</th>
                     <td>:</td>
-                    <td><?= $user->kd_unit; ?></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Kode Sub</th>
-                    <td>:</td>
-                    <td><?= $user->kd_sub; ?></td>
+                    <td><?= $user->kodeUnitSkpd; ?></td>
                   </tr>
 
                   <tr>

@@ -8,22 +8,19 @@ class Show extends BaseController
 {
     public function __construct()
     {
-        $this->model = new \App\Models\ModelTabel();
+        $this->model =new \App\Models\ModelTabelKinerja();
         
     }
     public function a($id)
     {
-        $this->UntukShow = new \App\Models\ModelUser();
-        $kd_urusan = $this->UntukShow->get_kode($id)->getRow('kd_urusan');
-        $kd_bidang = $this->UntukShow->get_kode($id)->getRow('kd_bidang');
-        $kd_unit = $this->UntukShow->get_kode($id)->getRow('kd_unit');
-        $kd_sub = $this->UntukShow->get_kode($id)->getRow('kd_sub');
+        $this->user = new \App\Models\ModelUser();
+        $kodeUnitSkpd = $this->user->get_kode($id)->getRow('kodeUnitSkpd');
 
-        $data['kop'] = $this->model->get_kop($kd_urusan,$kd_bidang, $kd_unit, $kd_sub)->getRow();
-        $data['program'] = $this->model->get_where($kd_urusan,$kd_bidang, $kd_unit, $kd_sub)->getResult();
-        $data['model'] = $this->model;
-        $this->TTD = new \App\Models\ModelTTD();
-        $data['ttd'] = $this->TTD->get_TTD($kd_urusan,$kd_bidang, $kd_unit, $kd_sub)->getRow();
+        $data['storeProcedure'] = $this->model->storeProcedureKinerja($kodeUnitSkpd)->getResult();
+
+        $data['kop'] = $this->model->get_where($kodeUnitSkpd)->getRow();
+        // $this->TTD = new \App\Models\ModelTTD();
+        // $data['ttd'] = $this->TTD->get_TTD($kodeUnitSkpd)->getRow();
         
         return view('tabel/print_admin', $data); 
 

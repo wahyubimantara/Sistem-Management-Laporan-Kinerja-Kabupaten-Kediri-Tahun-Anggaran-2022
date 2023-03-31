@@ -40,27 +40,21 @@
                   </tr>
 
                   <tr>
-                    <th scope="row">Kode Urusan</th>
+                    <th scope="row">Nama SKPD</th>
                     <td>:</td>
-                    <td><?= user()->kd_urusan; ?></td>
+                    <td><?= user()->fullname; ?></td>
                   </tr>
 
                   <tr>
-                    <th scope="row">Kode Bidang</th>
+                    <th scope="row">Kode SKPD</th>
                     <td>:</td>
-                    <td><?= user()->kd_bidang; ?></td>
+                    <td><?= user()->kodeSkpd; ?></td>
                   </tr>
 
                   <tr>
-                    <th scope="row">Kode Unit</th>
+                    <th scope="row">Kode Unit SKPD</th>
                     <td>:</td>
-                    <td><?= user()->kd_unit; ?></td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row">Kode Sub</th>
-                    <td>:</td>
-                    <td><?= user()->kd_sub; ?></td>
+                    <td><?= user()->kodeUnitSkpd; ?></td>
                   </tr>
 
                 </tbody>

@@ -90,21 +90,19 @@ class Admin extends BaseController
             // $userid= $this->request->getPost('userid');
             $username= $this->request->getVar('username');
             $email= $this->request->getVar('email');
-            $kd_urusan = $this->request->getVar('kd_urusan');
-            $kd_bidang = $this->request->getVar('kd_bidang');
-            $kd_unit = $this->request->getVar('kd_unit');
-            $kd_sub = $this->request->getVar('kd_sub');
-            $kunci = $this->request->getVar('kunci');
+            $kd_urusan = $this->request->getVar('fullname');
+            $kd_bidang = $this->request->getVar('kodeSkpd');
+            $kd_unit = $this->request->getVar('kodeUnitSkpd');
+            $kd_sub = $this->request->getVar('kunci');
 
             $data =[
                 // 'id' => $userid,
                 'username' =>  $username,
                 'email' =>  $email,
-                'kd_urusan' => $kd_urusan,
-                'kd_bidang' => $kd_bidang,
-                'kd_unit' => $kd_unit,
-                'kd_sub' => $kd_sub,
-                'kunci' => $kunci,   
+                'fullname' => $kd_urusan,
+                'kodeSkpd' => $kd_bidang,
+                'kodeUnitSkpd' => $kd_unit,
+                'kodeUnitSkpd' => $kd_sub,  
 
             ];
             $userModel = new ModelUser();

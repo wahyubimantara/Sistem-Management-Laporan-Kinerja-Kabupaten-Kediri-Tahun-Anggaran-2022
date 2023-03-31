@@ -12,7 +12,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Username</th>
-      <th scope="col">Email</th>
+      <th scope="col">SKPD</th>
       <th scope="col">Role</th>
       <th scope="col" style="text-align: center;">Action</th>
       <th scope="col">Status</th>
@@ -26,7 +26,7 @@
     <tr>
       <th scope="row"><?=$i++?></th>
       <td><?= $user->username; ?></td>
-      <td><?= $user->email; ?></td>
+      <td><?= $user->fullname; ?></td>
       <td>
       <?php if ($user->name == 'admin') { ?>
         <span class="badge badge-warning"><?= $user->name; ?></span>
@@ -69,7 +69,7 @@
      <td>
      <?php if ($user->kunci == '0') { ?>
      <?php if ($user->name == 'user') { ?>
-      <a href= "<?= base_url(); ?>/edit/EditSKPD/<?= $user->userid;?>" class="btn btn-warning btn-circle btn-sm" title="Edit Kinerja SKPD">
+      <a href= "<?= base_url(); ?>/EditKinerja/EditKinerjaSKPD/<?= $user->userid;?>" class="btn btn-warning btn-circle btn-sm" title="Edit Kinerja SKPD">
      <i class="fas fa-edit"></i>
     <?php   } ?>
     <?php   } ?>

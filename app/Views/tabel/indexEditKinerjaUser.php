@@ -14,7 +14,13 @@
     <h1 class="h3 mb-4 text-gray-800">Laporan Kinerja</h1>
 
     <style>
-        .table td,
+        .table td{
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 2px;
+            vertical-align: middle;
+        }
+        
         .table th {
             padding: .0.65rem;
             vertical-align: middle;
@@ -28,30 +34,32 @@
             color: #535356;
         }
 
-        .kiri_kanan {
-            border-right: hidden !important;
-            border-left: hidden !important;
-        }
-
         .kecilkan {
             font-size: 0.8em;
-        }
-
-        .kiri {
-            border-left: hidden !important;
-        }
-
-        .kanan {
-            border-right: hidden !important;
-        }
-
-        .atas {
-            border-top-style: hidden !important;
         }
 
         .hidden {
             visibility: hidden;
         }
+
+        .kode{
+            padding-right: 2px;
+        }
+
+        td {
+            line-height: 1.3;
+        }
+        
+        tr.lv1 td {
+            line-height: 1.7;
+            font-weight: bold;
+        }
+        .kiri {
+            border-left: hidden !important;
+        }
+        
+        
+
     </style>
 
     <div class="row">
@@ -66,7 +74,7 @@
                 <thead>
                     <tr style="text-align: center;">
                         <th rowspan="2">Kode</th>
-                        <th rowspan="2" colspan="5">Uraian</th>
+                        <th rowspan="2">Uraian (Program/Kegiatan/Sub Kegiatan/Indikator)</th>
                         <th colspan="2">Belanja</th>
                         <th colspan="4">Hasil</th>
                     </tr>
@@ -80,100 +88,28 @@
                 </thead>
 
                 <tbody>
-                    <?php $nomor_program = 1 ?>
-                    <?php foreach ($program as $p) : ?>
-                        <tr>
-                            <td class="kecilkan"><strong><?php echo  $p->Kd_Gab_Prog; ?></strong></td>
-                            <td colspan="5"><strong><br><?php echo $nomor_program++ . '. ' . $p->Nm_Program; ?></br><br></strong></td>
-                            <td class="kecilkan" style="text-align: right;"><?php echo number_format($p->SUM_Anggaran_Program, 2, ",", "."); ?></td>
-                            <td class="kecilkan" style="text-align: right;"><?php echo number_format($p->SUM_Realisasi_Program, 2, ",", "."); ?></td>
-                            <td>100</td>
-                            <td colspan="2"><?php echo number_format(($p->SUM_Anggaran_Program != 0) ? ($p->SUM_Realisasi_Program / $p->SUM_Anggaran_Program) * 100 : 0, 2, ",", ".") ?></td>
-                            <td>%</td>
+                    <?php foreach ($storeProcedure as $sp) : ?>
+                        <tr class="lv<?php echo $sp->level ?>">
+                                <td class="kode"><?php echo  $sp->kode; ?></td>
+                                <td style="padding-left: <?php echo $sp->level . '%'?>;"><?php echo  $sp->uraian; ?></td>
+                                <td style="text-align: right; "><?php echo $sp->anggaranBlj == null ? "" : number_format($sp->anggaranBlj, 2, ",", ".")  ; ?></td>
+                                <td style="text-align: right; "><?php echo $sp->realisasiBlj == null ? "" : number_format($sp->realisasiBlj, 2, ",", ".") ; ?></td>
+                                <td ><?php echo  $sp->target; ?></td>
+                                <td><?php echo  $sp->realisasi; ?></td>
+                                <td class="kiri" style="width: 2%;">
+                                <?php if ($sp->level == 4 and $sp->uraian != "Dana") { ?>
+                                    <i class="fas fa-edit" href="#" id="buttonEdit" data-toggle="modal" data-target="#ModalEdit" title="edit realisasi" onclick="edit(<?php echo $sp->no_id; ?>)"></i>
+                                <?php   } ?>
+                                </td>
+                                <td style="text-align:center; "><?php echo  $sp->satuan; ?></td>
                         </tr>
-
-                        <?php $nomor_kegiatan = 1 ?>
-                        <?php $kegiatans = $model->get_kegiatan($p)->getResult() ?>
-                        <?php foreach ($kegiatans as $k) : ?>
-                            <tr>
-                                <td class="kecilkan"><?php echo $k->Kd_Gab_Keg; ?></td>
-                                <td>&nbsp;</td>
-                                <td class="kiri" colspan="4"><?php echo $nomor_kegiatan++ . '&emsp;' . $k->Nm_Kegiatan; ?></td>
-                                <td class="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Anggaran, 2, ",", "."); ?></td>
-                                <td class="kecilkan" style="text-align: right;"><?php echo number_format($k->SUM_Realisasi, 2, ",", "."); ?></td>
-                                <td>100</td>
-                                <td colspan="2"><?php echo number_format(($k->SUM_Anggaran != 0) ? ($k->SUM_Realisasi / $k->SUM_Anggaran) * 100 : 0, 2, ",", ".") ?></td>
-                                <td>%</td>
-                            </tr>
-
-                            <?php $nomor_sub_kegiatan = 1 ?>
-                            <?php $sub_kegiatans = $model->get_sub_kegiatan($k)->getResult() ?>
-                            <?php foreach ($sub_kegiatans as $sub_k) : ?>
-
-                                <tr>
-                                    <td class="kecilkan" rowspan="2" style="white-space: nowrap;"><?php echo $sub_k->Kd_Gab_Sub_Keg; ?></td>
-                                    <td>&nbsp;</td>
-                                    <td class="kiri_kanan">&nbsp;</td>
-                                    <td colspan="3"><?php echo $nomor_sub_kegiatan++ . '&emsp;' . $sub_k->Nm_Sub_Kegiatan; ?></td>
-                                    <td class="kecilkan" style="text-align: right;">&nbsp</td>
-                                    <td class="kecilkan" style="text-align: right;">&nbsp</td>
-                                    <!-- <td>&nbsp;</td> -->
-                                    <td colspan="4">&nbsp;</td>
-                                    <!-- <td>&nbsp;</td> -->
-                                </tr>
-
-                                <tr>
-                                    <td>&nbsp;</td>
-                                    <td class="kiri_kanan">&nbsp;</td>
-                                    <td class="kiri" style="white-space: nowrap;">Indikator 1 :</td>
-                                    <td class="kiri" colspan="2" style="min-width: 15rem;"> Dana </td>
-                                    <?php $anggaran_value = number_format($sub_k->Anggaran, 2, ",", "."); ?>
-                                    <?php $realisasi_value = number_format($sub_k->Realisasi, 2, ",", "."); ?>
-                                    <td class="kecilkan" style="text-align: right;"><?php echo $anggaran_value; ?></td>
-                                    <td class="kecilkan" style="text-align: right;"><?php echo $realisasi_value; ?></td>
-                                    <td>100</td>
-                                    <td colspan="2"><?php echo number_format(($sub_k->Anggaran != 0) ? ($sub_k->Realisasi / $sub_k->Anggaran) * 100 : 0, 2, ",", ".") ?> </td>
-                                    <td>%</td>
-                                </tr>
-
-
-                                <?php $nomor = 2 ?>
-                                <?php $indikator = $model->get_indikator($sub_k)->getResult() ?>
-                                <?php foreach ($indikator as $i) : ?>
-                                    <tr>
-
-                                        <td class="atas">&nbsp;</td>
-                                        <td class="kanan">&nbsp;</td>
-                                        <td>&nbsp;</td>
-
-                                        <td class="kiri">Indikator <?php echo $nomor++ ?> :</td>
-                                        <td class="kiri" colspan="2"><?= $i->tolak_ukur; ?></td>
-                                        <td colspan="2">&nbsp</td>
-                                        <td><?php echo fnumber($i->target_angka); ?></td>
-                                        <td><?= $i->realisasi; ?> </td>
-                                        <td class="kiri" style="width: 2%;">
-                                            <?php $kunci = user()->kunci; ?>
-                                            <?php if ($kunci == '0') { ?>
-                                                <i class="fas fa-edit" href="#" id="buttonEdit" data-toggle="modal" data-target="#ModalEdit" title="edit realisasi" onclick="edit(<?php echo $i->id; ?>)">
-                                                </i>
-                                            <?php   } ?>
-                                        </td>
-                                        <td><?= $i->target_uraian; ?></td>
-                                    </tr>
-                                <?php endforeach ?>
-                                <!-- End Loop Indikator -->
-                            <?php endforeach ?>
-                            <!-- End Loop sub kegiatan -->
-                        <?php endforeach ?>
-                        <!-- End Loop Kegiatan -->
-                        </tr>
+                        
                     <?php endforeach ?>
-                    <!-- End Loop Program -->
+                    <!-- End Loop-->
 
                 </tbody>
             </table>
-
-            <!-- Modal Edit -->
+            <!-- Modal Edit Realisasi-->
             <div class="modal fade" id="ModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -213,27 +149,22 @@
                 </div>
             </div>
             <!-- Modal Edit -->
-
         </div>
-    </div>
-
-</div>
 
 <?= $this->endSection(); ?>
 <?= $this->section('scriptku'); ?>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-
     function edit($id) {
 
         $.ajax({
-            url: "<?php echo site_url("Tabel/edit") ?>/" + $id,
+            url: "<?php echo site_url("EditKinerja/edit") ?>/" + $id,
             type: "GET",
             success: function(hasil) {
                 var $obj = $.parseJSON(hasil);
                 if ($obj.id != '') {
                     $('#id').val($obj.id);
-                    $('#indikator_isi').val($obj.tolak_ukur);
+                    $('#indikator_isi').val($obj.namaIndikator);
                     $('#realisasi').val($obj.realisasi);
                 }
             }
@@ -245,7 +176,7 @@
         var $id = $('#id').val();
         var $realisasi = $('#realisasi').val();
         $.ajax({
-            url: "<?php echo site_url("Tabel/simpan") ?>",
+            url: "<?php echo site_url("EditKinerja/simpanRealisasi") ?>",
             type: "POST",
             data: {
                 id: $id,
@@ -269,6 +200,7 @@
         });
 
     });
+
 
     $('#final').on('click', function() {
         var $id = $('#id').val();
